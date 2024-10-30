@@ -105,9 +105,9 @@ namespace ProyectoASll.Repositorio
             if (imagenUrl != null)
             {
                 // Retorna la ruta completa
-                return Path.Combine(@"\img", imagenUrl); // Ruta relativa
+                return Path.Combine(@"/img", imagenUrl); // Ruta relativa
             }
-            return imagenUrl; // Devuelve la URL de la imagen
+            return "/img/arle.jpg"; // Devuelve la URL de la imagen
 
         }
 

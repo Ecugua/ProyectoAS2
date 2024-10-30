@@ -41,9 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 38, nombre: "Gloria", apellido: "Monroy", telefono: "+502 9988 6677", email: "gloria.monroy@example.com", direccion: "Guatemala City" },
         { id: 39, nombre: "Diego", apellido: "Ramos", telefono: "+502 5566 7788", email: "diego.ramos@example.com", direccion: "Zona 10" },
         { id: 40, nombre: "Alejandra", apellido: "Quintana", telefono: "+502 4455 9988", email: "alejandra.quintana@example.com", direccion: "San Miguel Petapa" }
-    ];
-
-    
+    ];   
         // Referencias al DOM
         const listaConfirmacion = document.querySelector('.lista-confirmacion');
         const subtotalElem = document.getElementById('subtotal');
@@ -80,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
             carritoConfirmacion.forEach((producto, index) => {
                 const costo = producto.precio.toFixed(2);
-                const cantidad = producto.cantidad || 1;
+                const cantidad = producto.cantidad || 1; // Asignar 1 por defecto si es undefined
                 const subtotalProducto = (producto.precio * cantidad).toFixed(2);
                 subtotal += parseFloat(subtotalProducto);
     
@@ -121,10 +119,15 @@ document.addEventListener('DOMContentLoaded', () => {
         document.addEventListener('input', (e) => {
             if (e.target.classList.contains('cantidad-input')) {
                 const index = e.target.getAttribute('data-index');
-                carritoConfirmacion[index].cantidad = parseInt(e.target.value);
+                const nuevaCantidad = parseInt(e.target.value);
     
-                localStorage.setItem('carritoConfirmacion', JSON.stringify(carritoConfirmacion));
-                renderizarProductos();
+                if (!isNaN(nuevaCantidad) && nuevaCantidad > 0) {
+                    carritoConfirmacion[index].cantidad = nuevaCantidad;
+                    localStorage.setItem('carritoConfirmacion', JSON.stringify(carritoConfirmacion));
+                    renderizarProductos();
+                } else {
+                    e.target.value = carritoConfirmacion[index].cantidad || 1; // Restablece valor anterior si es inválido
+                }
             }
         });
     
@@ -204,15 +207,16 @@ document.addEventListener('DOMContentLoaded', () => {
     
             let total = 0;
             productos.forEach(producto => {
-                const subtotal = producto.precio * producto.cantidad;
+                const cantidad = producto.cantidad || 1; // Validar cantidad
+                const subtotal = producto.precio * cantidad;
                 total += subtotal;
     
                 const fila = `<tr>
                                 <td>${producto.nombre}</td>
                                 <td>Q${producto.precio.toFixed(2)}</td>
-                                <td>${producto.cantidad}</td>
+                                <td>${cantidad}</td>
                                 <td>Q${subtotal.toFixed(2)}</td>
-                            </tr>`;
+                              </tr>`;
                 tablaProductos.innerHTML += fila;
             });
     

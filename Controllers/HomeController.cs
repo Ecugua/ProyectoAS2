@@ -39,26 +39,13 @@ namespace ProyectoASll.Controllers
             };
             // Pasar la URL de la imagen a la vista
             ViewBag.ImagenUrl = imagenUrl;
-            return View(); ;
+            return View(); 
         }
 
         public async Task<IActionResult> Catalogo()
         {
-            // Obtener el ID del empleado logueado
-            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-
-            // Asegurarse de que el usuario esté logueado
-            if (userId == null)
-            {
-                return Unauthorized(); // Manejar el caso en que el usuario no esté logueado
-            }
-
-            // Obtener la URL de la imagen del empleado
-            var imagenUrl = await _unidadTrabajo.EmpleadoRepositorio.ObtenerImagenUrlEmpleado(userId);
-
-            // Pasar la URL de la imagen a la vista
-            ViewBag.ImagenUrl = imagenUrl;
-            return View(); ;
+            
+            return View(); 
         }
 
         public IActionResult Privacy()

@@ -1,0 +1,194 @@
+﻿@model IEnumerable<ProyectoASll.Models.MMarca>
+@{
+    ViewData["Title"] = "ElectroTech";
+}
+<!DOCTYPE html>
+<html lang="es">
+
+<body>
+
+    <!-- Contenedor principal -->
+    <div class="container-layout mt-4">
+
+        <!-- contenedor principal de catalogo de productos -->
+        <div class="contenedor-main-catalogo container">
+
+            <section class="opciones-desplegables-catalogo">
+                <!-- Opciones desplegables -->
+                <div class="dropdown-catalogo">
+                    <button class="dropdown-toggle">PC </button>
+                    <ul class="submenu">
+                        <li>PC Gaming</li>
+                        <li>PC Office</li>
+                        <li>PC All-in-One</li>
+                    </ul>
+                </div>
+
+                <div class="dropdown-catalogo">
+                    <button class="dropdown-toggle">Laptop </button>
+                    <ul class="submenu">
+                        <li>Laptop Gamer</li>
+                        <li>Ultrabook</li>
+                        <li>Laptop Convertible</li>
+                    </ul>
+                </div>
+
+                <div class="dropdown-catalogo">
+                    <button class="dropdown-toggle">Mobil </button>
+                    <ul class="submenu">
+                        <li>Smartphone</li>
+                        <li>Tablet</li>
+                        <li>Smartwatch</li>
+                    </ul>
+                </div>
+
+                <div class="dropdown-catalogo">
+                    <button class="dropdown-toggle">Gaming </button>
+                    <ul class="submenu">
+                        <li>Consolas</li>
+                        <li>Juegos</li>
+                        <li>Accesorios</li>
+                    </ul>
+                </div>
+
+                <div class="dropdown-catalogo">
+                    <button class="dropdown-toggle">Conexiones </button>
+                    <ul class="submenu">
+                        <li>Cables HDMI</li>
+                        <li>Adaptadores</li>
+                        <li>Conectores USB</li>
+                    </ul>
+                </div>
+
+                <div class="dropdown-catalogo">
+                    <button class="dropdown-toggle">Accesorios </button>
+                    <ul class="submenu">
+                        <li>Audífonos</li>
+                        <li>Teclados</li>
+                        <li>Mouses</li>
+                    </ul>
+                </div>
+
+                <div class="dropdown-catalogo">
+                    <button class="dropdown-toggle">Software </button>
+                    <ul class="submenu">
+                        <li>Sistemas Operativos</li>
+                        <li>Antivirus</li>
+                        <li>Productividad</li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <!-- Sección de Categorías -->
+            <section class="section-categorias">
+                <div class="categorias-header">
+                    <h2>Categorías</h2>
+                    <a href="#" class="ver-todo-link">Ver Todo <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="categorias-contenido">
+                    <div class="categoria-item">
+                        <a asp-area="" asp-controller="Marca" asp-action="Index">
+                            <img src="/resources/laptop.png" alt="Laptop">
+                        </a>
+                        <p>Laptop</p>
+                    </div>
+                    <div class="categoria-item">
+                        <a asp-area="" asp-controller="Producto" asp-action="Index">
+                            <img src="/resources/pc.png" alt="PC">
+                        </a>                        
+                        <p>PC</p>
+                    </div>
+                    <div class="categoria-item">
+                        <a asp-area="" asp-controller="Empleado" asp-action="Index">
+                            <img src="/resources/mobiles.png" alt="Mobile">
+                        </a>
+                        <p>Mobiles</p>
+                    </div>
+                    <div class="categoria-item">
+                        <img src="/resources/gaming.png" alt="Gaming">
+                        <p>Gaming</p>
+                    </div>
+                    <div class="categoria-item">
+                        <img src="/resources/smartWatch.png" alt="Smart Watch">
+                        <p>Smart Watch</p>
+                    </div>
+                    <div class="categoria-item">
+                        <img src="/resources/camara.png" alt="Camera">
+                        <p>Camara</p>
+                    </div>
+                    <div class="categoria-item">
+                        <img src="/resources/accesorios.png" alt="Accessories">
+                        <p>Accesorios</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Sección de Top Ventas -->
+            <section class="section-topVentas">
+                <div class="topVentas-header">
+                    <h2>Top de ventas</h2>
+                    <a href="#" class="ver-todo-link">Ver todo <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="topVentas-contenido">
+                    <div class="venta-item">
+                        <div class="imagen-container">
+                            <img src="/resources/topventas/ps4.png" alt="Play Station 4 Pro 1Tb">
+                        </div>
+                        <p>Play Station 4 Pro 1Tb</p>
+                        <span>10% de descuento</span>
+                    </div>
+
+                    <div class="venta-item">
+                        <div class="imagen-container">
+                            <img src="/resources/topventas/airpods.png" alt="Airpods Pro 2">
+                        </div>
+                        <p>Airpods Pro 2</p>
+                        <span>20% de descuento</span>
+                    </div>
+
+                    <div class="venta-item">
+                        <div class="imagen-container">
+                            <img src="/resources/topventas/macbook.png" alt="Apple MacBook Air 15'">
+                        </div>
+                        <p>Apple MacBook Air 15"</p>
+                        <span>20% de descuento</span>
+                    </div>
+
+                    <div class="venta-item">
+                        <div class="imagen-container">
+                            <img src="/resources/topventas/samsungGalaxys23.png" alt="Samsung Galaxy S23">
+                        </div>
+                        <p>SAMSUNG Galaxy S23</p>
+                        <span>30% de descuento</span>
+                    </div>
+
+                    <div class="venta-item">
+                        <div class="imagen-container">
+                            <img src="/resources/topventas/vr.png" alt="VR VisionTech X1">
+                        </div>
+                        <p>VR VisionTech X1</p>
+                        <span>50% de descuento</span>
+                    </div>
+
+                    <div class="venta-item">
+                        <div class="imagen-container">
+                            <img src="/resources/topventas/vr2.png" alt="VR VisionTech X1">
+                        </div>
+                        <p>VR VisionTech X1</p>
+                        <span>50% de descuento</span>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+    </div>
+
+</body>
+</html>
+
+}
