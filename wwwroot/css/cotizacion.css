@@ -1,0 +1,92 @@
+/* Estilos específicos para la cotización */
+.cotizacion-layout {
+    margin-top: 20px;
+}
+
+.cotizacion-container {
+    padding: 15px;
+}
+
+/* Estilo de la tabla de productos */
+.cotizacion-tabla td img {
+    width: 100%;
+    max-width: 80px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.cotizacion-tabla th {
+    font-weight: bold;
+    color: #6c757d;
+    text-align: center;
+}
+
+/* Estilo del resumen */
+.resumen-cotizacion {
+    background-color: #e9ecef !important;
+    padding: 20px;
+    /* margin-top: 20px; */
+}
+
+/* Estilo responsivo para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .cotizacion-tabla td img {
+        max-width: 60px;
+    }
+
+    .resumen-cotizacion {
+        margin-top: 15px;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .cotizacion-tabla {
+        font-size: 0.85rem;
+    }
+
+    .cotizacion-container {
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        margin-top: 8px;
+    }
+}
+
+
+
+/* Estilos específicos para el modal de clientes */
+.clientes-tabla th {
+    text-align: center;
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.clientes-tabla td {
+    vertical-align: middle;
+}
+
+.modal-header {
+    background-color: #e9ecef;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.modal-content {
+    border-radius: 8px;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .clientes-tabla {
+        font-size: 0.9rem;
+    }
+
+    .modal-body {
+        padding: 10px;
+    }
+}

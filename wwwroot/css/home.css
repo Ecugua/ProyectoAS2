@@ -1,0 +1,297 @@
+/* Contenedor principal que agrupa main y aside */
+.container-layout {
+    display: flex;
+    width: 100%;
+    gap: 2%; /* Espacio entre main y aside */
+    margin-top: 20px;
+}
+
+/* Main content */
+.main-content {
+    width: 73%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Aside content */
+.aside-content {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #e6e6e6;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Secciones dentro del main y aside */
+.main-section, .aside-section {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de botones en la sección */
+.buttons-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px; /* Espacio entre los botones */
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los botones */
+.icon-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+/* Efecto hover en los botones */
+.icon-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para los íconos dentro de los botones */
+.icon-button i {
+    font-size: 36px;
+    color: #3a9c73;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el texto dentro de los botones */
+.icon-button span {
+    font-size: 16px;
+    color: #3a9c73;
+}
+
+/* Estilos del aside */
+.aside-content {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #e6e6e6;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de perfil */
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3a9c73;
+}
+
+.profile-role,
+.profile-contact,
+.profile-email {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.logout-btn {
+    background-color: #3a9c73;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #2d7a59;
+}
+
+/* Sección de historial */
+.history-section {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.history-header h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.view-all-link {
+    font-size: 14px;
+    color: #3a9c73;
+    text-decoration: none;
+}
+
+.view-all-link:hover {
+    text-decoration: underline;
+}
+
+.history-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.history-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.status-active {
+    background-color: #3a9c73;
+}
+
+.status-error {
+    background-color: red;
+}
+
+.status-inactive {
+    background-color: gray;
+}
+
+.history-time {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Contenedor general de gráficos */
+.charts-wrapper {
+    display: flex;
+    justify-content: space-around; /* Espacio igual entre gráficos */
+    align-items: center;
+    gap: 20px; /* Espacio entre los gráficos */
+    flex-wrap: wrap; /* Asegura que los gráficos se apilen en pantallas pequeñas */
+}
+
+/* Estilos individuales para cada gráfico */
+.chart-container {
+    width: 45%; /* Cada gráfico ocupará el 45% del ancho del contenedor */
+    max-width: 300px; /* Ancho máximo de cada gráfico */
+    padding: 10px;
+    box-sizing: border-box; /* Incluye padding en el tamaño total */
+}
+
+/* Canvas del gráfico para que se ajuste al contenedor */
+.chart-container canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+/* estilos responsivos con medias queries */
+/* Media Queries: Estilos responsivos */
+@media (max-width: 1024px) {
+    /* Estilos para tablets */
+    .container-layout {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .main-content,
+    .aside-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Estilos para teléfonos */
+    .buttons-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .icon-button {
+        width: 100%;
+        height: auto;
+    }
+
+    .history-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+/* responsividad para graficos estadisticos */
+@media (max-width: 768px) {
+    .charts-wrapper {
+        flex-direction: column; /* Apilar gráficos en columnas */
+    }
+
+    .chart-container {
+        width: 100%; /* Cada gráfico ocupará el 100% del ancho en pantallas pequeñas */
+        max-width: none;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Estilos para teléfonos pequeños */
+    .buttons-section {
+        gap: 10px;
+    }
+
+    .icon-button i {
+        font-size: 28px;
+    }
+
+    .logout-btn {
+        width: 100%;
+        padding: 8px 16px;
+    }
+}

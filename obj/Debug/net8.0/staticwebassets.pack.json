@@ -1,0 +1,685 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ProyectoASll.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ProyectoASll.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\bootstrap\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\catalogo.css",
+      "PackagePath": "staticwebassets\\css\\catalogo.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\catalogoDetalle.css",
+      "PackagePath": "staticwebassets\\css\\catalogoDetalle.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\catalogoView.css",
+      "PackagePath": "staticwebassets\\css\\catalogoView.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\cotizacion.css",
+      "PackagePath": "staticwebassets\\css\\cotizacion.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\bootstrap\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\bootstrap\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\bootstrap\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\bootstrap\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\bootstrap\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\bootstrap\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\bootstrap\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\catalogo.js",
+      "PackagePath": "staticwebassets\\js\\catalogo.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\catalogoDetalle.js",
+      "PackagePath": "staticwebassets\\js\\catalogoDetalle.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\catalogoView.js",
+      "PackagePath": "staticwebassets\\js\\catalogoView.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\categorias.js",
+      "PackagePath": "staticwebassets\\js\\categorias.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\chartjs\\graficos.js",
+      "PackagePath": "staticwebassets\\js\\chartjs\\graficos.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\clientes.js",
+      "PackagePath": "staticwebassets\\js\\clientes.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\cotizacion copy.js",
+      "PackagePath": "staticwebassets\\js\\cotizacion copy.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\cotizacion.js",
+      "PackagePath": "staticwebassets\\js\\cotizacion.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\marcas.js",
+      "PackagePath": "staticwebassets\\js\\marcas.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\subcategorias.js",
+      "PackagePath": "staticwebassets\\js\\subcategorias.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\Iconos\\Frame 15.png",
+      "PackagePath": "staticwebassets\\resources\\Iconos\\Frame 15.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\Iconos\\Frame 18.svg",
+      "PackagePath": "staticwebassets\\resources\\Iconos\\Frame 18.svg"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\Iconos\\Frame_18-removebg-preview.png",
+      "PackagePath": "staticwebassets\\resources\\Iconos\\Frame_18-removebg-preview.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\Iconos\\Icon config green 559638.png",
+      "PackagePath": "staticwebassets\\resources\\Iconos\\Icon config green 559638.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\Iconos\\Icon config green 559638.svg",
+      "PackagePath": "staticwebassets\\resources\\Iconos\\Icon config green 559638.svg"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\Iconos\\Icon inventory green 559638.png",
+      "PackagePath": "staticwebassets\\resources\\Iconos\\Icon inventory green 559638.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\Iconos\\Icon inventory green 559638.svg",
+      "PackagePath": "staticwebassets\\resources\\Iconos\\Icon inventory green 559638.svg"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\Iconos\\Icon not foun gray cacdd8.png",
+      "PackagePath": "staticwebassets\\resources\\Iconos\\Icon not foun gray cacdd8.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\Iconos\\Icon not foun gray cacdd8.svg",
+      "PackagePath": "staticwebassets\\resources\\Iconos\\Icon not foun gray cacdd8.svg"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\Iconos\\Icon not foun green 559638.png",
+      "PackagePath": "staticwebassets\\resources\\Iconos\\Icon not foun green 559638.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\Iconos\\Icon not foun green 559638.svg",
+      "PackagePath": "staticwebassets\\resources\\Iconos\\Icon not foun green 559638.svg"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\Iconos\\Icon not foun v2 gray cacdd8.png",
+      "PackagePath": "staticwebassets\\resources\\Iconos\\Icon not foun v2 gray cacdd8.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\Iconos\\Icon not foun v2 gray cacdd8.png.svg",
+      "PackagePath": "staticwebassets\\resources\\Iconos\\Icon not foun v2 gray cacdd8.png.svg"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\Iconos\\Icon not foun v2 green 559638.png",
+      "PackagePath": "staticwebassets\\resources\\Iconos\\Icon not foun v2 green 559638.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\Iconos\\Icon not foun v2 green 559638.svg",
+      "PackagePath": "staticwebassets\\resources\\Iconos\\Icon not foun v2 green 559638.svg"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\Iconos\\Icon not foun v3 gray cacdd8.png",
+      "PackagePath": "staticwebassets\\resources\\Iconos\\Icon not foun v3 gray cacdd8.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\Iconos\\Icon not foun v3 gray cacdd8.svg",
+      "PackagePath": "staticwebassets\\resources\\Iconos\\Icon not foun v3 gray cacdd8.svg"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\Iconos\\Icon not foun v3 green 559638.png",
+      "PackagePath": "staticwebassets\\resources\\Iconos\\Icon not foun v3 green 559638.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\Iconos\\Icon not foun v3 green 559638.svg",
+      "PackagePath": "staticwebassets\\resources\\Iconos\\Icon not foun v3 green 559638.svg"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\Iconos\\Icon product green 559638.png",
+      "PackagePath": "staticwebassets\\resources\\Iconos\\Icon product green 559638.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\Iconos\\Icon quotation green 559638 .png",
+      "PackagePath": "staticwebassets\\resources\\Iconos\\Icon quotation green 559638 .png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\Iconos\\User Icon green 559638.png",
+      "PackagePath": "staticwebassets\\resources\\Iconos\\User Icon green 559638.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\Iconos\\User Not foud  gray cacdd8.png.png",
+      "PackagePath": "staticwebassets\\resources\\Iconos\\User Not foud  gray cacdd8.png.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\Iconos\\User Not foud  gray cacdd8.png.svg",
+      "PackagePath": "staticwebassets\\resources\\Iconos\\User Not foud  gray cacdd8.png.svg"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\Iconos\\User Not foud  green 559638.png",
+      "PackagePath": "staticwebassets\\resources\\Iconos\\User Not foud  green 559638.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\Iconos\\User Not foud  green 559638.svg",
+      "PackagePath": "staticwebassets\\resources\\Iconos\\User Not foud  green 559638.svg"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\accesorios.png",
+      "PackagePath": "staticwebassets\\resources\\accesorios.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\camara.png",
+      "PackagePath": "staticwebassets\\resources\\camara.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\gaming.png",
+      "PackagePath": "staticwebassets\\resources\\gaming.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\laptop.png",
+      "PackagePath": "staticwebassets\\resources\\laptop.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\mobiles.png",
+      "PackagePath": "staticwebassets\\resources\\mobiles.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\pc.png",
+      "PackagePath": "staticwebassets\\resources\\pc.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\smartWatch.png",
+      "PackagePath": "staticwebassets\\resources\\smartWatch.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\topventas\\airpods.png",
+      "PackagePath": "staticwebassets\\resources\\topventas\\airpods.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\topventas\\image 29.png",
+      "PackagePath": "staticwebassets\\resources\\topventas\\image 29.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\topventas\\image2.png",
+      "PackagePath": "staticwebassets\\resources\\topventas\\image2.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\topventas\\image30png.png",
+      "PackagePath": "staticwebassets\\resources\\topventas\\image30png.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\topventas\\image32.png",
+      "PackagePath": "staticwebassets\\resources\\topventas\\image32.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\topventas\\image4.png",
+      "PackagePath": "staticwebassets\\resources\\topventas\\image4.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\topventas\\macbook.png",
+      "PackagePath": "staticwebassets\\resources\\topventas\\macbook.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\topventas\\ps4.png",
+      "PackagePath": "staticwebassets\\resources\\topventas\\ps4.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\topventas\\samsungGalaxys23.png",
+      "PackagePath": "staticwebassets\\resources\\topventas\\samsungGalaxys23.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\topventas\\vr.png",
+      "PackagePath": "staticwebassets\\resources\\topventas\\vr.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\resources\\topventas\\vr2.png",
+      "PackagePath": "staticwebassets\\resources\\topventas\\vr2.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ProyectoASll.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ProyectoASll.props",
+      "PackagePath": "build\\ProyectoASll.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ProyectoASll.props",
+      "PackagePath": "buildMultiTargeting\\ProyectoASll.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ProyectoASll.props",
+      "PackagePath": "buildTransitive\\ProyectoASll.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

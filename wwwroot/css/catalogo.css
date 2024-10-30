@@ -1,0 +1,296 @@
+/* Opciones desplegables */
+.opciones-desplegables-catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 2px solid #b8c9c2; /* Borde inferior verde */
+    padding-bottom: 10px; /* Espacio antes del borde */
+    margin-bottom: 20px; /* Espacio con la siguiente sección */
+}
+
+/* Estilos de los botones */
+.dropdown-toggle {
+    background-color: #f0f8f8;
+    color: #3a9c73;
+    border: 1px solid #3a9c73;
+    border-radius: 30px;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s;
+}
+
+.dropdown-toggle:hover {
+    background-color: #2d7a59;
+    color: white;
+}
+
+/* Submenú */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    list-style: none;
+    padding: 8px 0;
+    width: 150px;
+}
+
+.dropdown-catalogo:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    padding: 10px 12px;
+    font-size: 14px;
+    color: #3a9c73;
+    cursor: pointer;
+}
+
+.submenu li:hover {
+    background-color: #e6f4e6;
+    color: #2d7a59;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .dropdown-toggle {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 992px) {
+    .dropdown-toggle {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .opciones-desplegables-catalogo {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 768px) {
+    .opciones-desplegables-catalogo {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .submenu li {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 576px) {
+    .opciones-desplegables-catalogo {
+        display: none; /* Ocultar en móviles pequeños */
+    }
+}
+
+/* ------------------------------------------------------------ */
+
+/* Sección de categorías */
+.section-categorias {
+    padding: 20px 0;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.categorias-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.categorias-header h2 {
+    font-size: 24px;
+    color: #3a9c73;
+    font-weight: bold;
+    margin: 0;
+}
+
+.ver-todo-link {
+    font-size: 16px;
+    color: #3a9c73;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.ver-todo-link:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor de categorías */
+.categorias-contenido {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Elemento individual de categoría */
+.categoria-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 120px;
+}
+
+/* Imagen dentro del contenedor */
+.categoria-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: contain; /* Asegura que la imagen se ajuste al contenedor */
+    object-position: center; /* Centra la imagen en el contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+/* Efecto hover en la imagen */
+.categoria-item img:hover {
+    transform: scale(1.1);
+}
+
+.categoria-item p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .categorias-contenido {
+        justify-content: space-evenly;
+    }
+
+    .categoria-item {
+        width: 100px;
+    }
+
+    .categoria-item img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+
+/* ----------------------------------------------------- */
+/* Sección de Top Ventas */
+.section-topVentas {
+    margin-top: 30px;
+}
+
+.section-topVentas .topVentas-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #3a9c73;
+    padding-bottom: 5px;
+}
+
+.section-topVentas .topVentas-header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #3a9c73;
+}
+
+.section-topVentas .ver-todo-link {
+    text-decoration: none;
+    font-size: 14px;
+    color: #3a9c73;
+}
+
+.section-topVentas .ver-todo-link i {
+    margin-left: 5px;
+}
+
+/* Contenedor de los productos en Top Ventas */
+.topVentas-contenido {
+    display: flex;
+    justify-content: center; /* Distribución uniforme */
+    gap: 10px; /* Espacio reducido entre los elementos */
+    flex-wrap: wrap;
+}
+
+/* Estilo para cada producto individual */
+.venta-item {
+    width: calc(15% - 6px); /* Asegura 6 elementos por fila en pantallas grandes */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px; /* Espacio entre la imagen y el texto */
+}
+
+.venta-item p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.venta-item .descuento {
+    font-size: 12px;
+    color: #3a9c73;
+}
+
+/* Contenedor de la imagen */
+.imagen-container {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #3a9c73;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.imagen-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor */
+}
+
+/* Efecto hover */
+.imagen-container:hover {
+    transform: scale(1.05); /* Efecto al pasar el mouse */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 1200px) {
+    .venta-item {
+        width: calc(15% - 8px); /* 5 elementos por fila en pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .venta-item {
+        width: calc(33.33% - 8px); /* 3 elementos por fila en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .venta-item {
+        width: calc(50% - 8px); /* 2 elementos por fila en dispositivos pequeños */
+    }
+}
