@@ -39,10 +39,10 @@
     <div class="sidebar" id="sidebar" style="display: @(SignInManager.IsSignedIn(User) ? "block" : "none");">
         <button class="close-btn" id="closeBtn">←</button>
         <ul>
-            <li><a href="/pages/home.html"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="/pages/catalogo.html"><i class="fas fa-book"></i> Cotización</a></li>
-            <li><a href="/pages/clientes.html"><i class="fas fa-user"></i> Clientes</a></li>
-            <li><a href="/pages/productos.html"><i class="fas fa-box-open"></i> Productos</a></li>
+            <li><a asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i> Home</a></li>
+            <li><a asp-area="" asp-controller="Catalogo" asp-action="Catalogo"><i class="fas fa-book"></i> Cotización</a></li>
+            <li><a asp-area="" asp-controller="Cliente" asp-action="Cliente"><i class="fas fa-user"></i> Clientes</a></li>
+            <li><a asp-area="" asp-controller="Producto" asp-action="Producto"><i class="fas fa-box-open"></i> Productos</a></li>
 
             <!-- Item Inventarios con Submenú -->
             <li class="d-block">
@@ -51,9 +51,9 @@
                     <i class="fas fa-chevron-down"></i>
                 </a>
                 <ul class="collapse list-unstyled ps-3" id="submenuInventarios">
-                    <li><a class="text-decoration-none" href="../pages/categoria.html">categorias</a></li>
-                    <li><a class="text-decoration-none" href="..//pages/subcategoria.html">Subcategorias</a></li>
-                    <li><a class="text-decoration-none" href="../pages/marca.html">Marca</a></li>
+                    <li><a class="text-decoration-none" asp-area="" asp-controller="Categoria" asp-action="Categoria">categorias</a></li>
+                    <li><a class="text-decoration-none" asp-area="" asp-controller="SubCategoria" asp-action="SubCategoria">Subcategorias</a></li>
+                    <li><a class="text-decoration-none" asp-area="" asp-controller="Marca" asp-action="Marca">Marca</a></li>
                 </ul>
             </li>
         </ul>

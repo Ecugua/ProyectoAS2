@@ -39,13 +39,24 @@ namespace ProyectoASll.Controllers
             };
             // Pasar la URL de la imagen a la vista
             ViewBag.ImagenUrl = imagenUrl;*/
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (string.IsNullOrEmpty(userId))
+            {
+                return Unauthorized(new { message = "Usuario no autenticado" });
+            }
+
+            var empleado = await _unidadTrabajo.EmpleadoRepositorio.ObtenerEmpleado(userId);
+            if (empleado == null)
+            {
+                return NotFound(new { message = "Empleado no encontrado" });
+            }
             var empleadoViewModel = new EmpleadoVM
             {
-                Nombre = "Prueba Nombre",
-                Rol = "Prueba Rol",
-                Telefono = "123456789",
-                Email = "prueba@ejemplo.com",
-                ImagenUrl = "~/img/arle.jpg"
+                Nombre = empleado.Nombre,
+                Rol = empleado.Rol,
+                Telefono = empleado.Numero,
+                Email = empleado.Email,
+                ImagenUrl = empleado.ImagenURL ?? "/img/arle.jpg"
             };
             return View(empleadoViewModel); 
         }
