@@ -37,6 +37,26 @@ namespace ProyectoASll.Controllers
         }
 
         [HttpGet]
+        public async Task<IActionResult> obtenerEmpleado()
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (string.IsNullOrEmpty(userId))
+            {
+                return Unauthorized(new { message = "Usuario no autenticado" });
+            }
+
+            // Obtiene los datos del empleado utilizando el ID del usuario autenticado
+            var empleado = await _unidadTrabajo.EmpleadoRepositorio.ObtenerEmpleado(userId);
+
+            if (empleado == null)
+            {
+                return NotFound(new { message = "Empleado no encontrado" });
+            }
+
+            return Json(new { data = empleado });
+        }
+
+        [HttpGet]
         public async Task<IActionResult> obtenerTodos()
         {
             //con esto nos devolvera los campos de empleado

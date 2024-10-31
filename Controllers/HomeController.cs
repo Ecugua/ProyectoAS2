@@ -20,7 +20,7 @@ namespace ProyectoASll.Controllers
 
         public async Task<IActionResult> Index()
         {
-
+            /*
             // Obtener el ID del empleado logueado
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
@@ -38,8 +38,16 @@ namespace ProyectoASll.Controllers
                 ImagenUrl = imagenUrl
             };
             // Pasar la URL de la imagen a la vista
-            ViewBag.ImagenUrl = imagenUrl;
-            return View(); 
+            ViewBag.ImagenUrl = imagenUrl;*/
+            var empleadoViewModel = new EmpleadoVM
+            {
+                Nombre = "Prueba Nombre",
+                Rol = "Prueba Rol",
+                Telefono = "123456789",
+                Email = "prueba@ejemplo.com",
+                ImagenUrl = "~/img/arle.jpg"
+            };
+            return View(empleadoViewModel); 
         }
 
         public IActionResult Catalogo()
@@ -59,6 +67,7 @@ namespace ProyectoASll.Controllers
         }
 
         #region API
+
 
         [HttpGet]
         public async Task<IActionResult> obtenerimg()

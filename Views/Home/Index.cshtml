@@ -1,6 +1,8 @@
 ﻿@{
     ViewData["Title"] = "ElectroTech";
 }
+@using ProyectoASll.ViewModels
+@model ProyectoASll.ViewModels.EmpleadoVM
 
 <!DOCTYPE html>
 <html lang="es">
@@ -60,15 +62,14 @@
         <aside class="aside-content">
             <!-- Sección de perfil -->
             <section class="aside-section profile-section">
-                <img src="./resources/Iconos/User Not foud  green 559638.png" alt="Avatar" class="profile-avatar">
-                <h3 class="profile-name">Andreas Iniesta</h3>
-                <p class="profile-role">Empleado</p>
-                <p class="profile-contact">Tel: 502 4647-3892</p>
-                <p class="profile-email">Andreas@gmail.com</p>
+                <img src="@Model.ImagenUrl" alt="Avatar" class="profile-avatar">
+                <h3 class="profile-name">@Model.Nombre</h3>
+                <p class="profile-role">@Model.Rol</p>
+                <p class="profile-contact">Tel: @Model.Telefono</p>
+                <p class="profile-email">@Model.Email</p>
                 <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
                     <button class="logout-btn">Cerrar Sesión</button>
                 </form>
-                
             </section>
 
             <!-- Sección de historial -->

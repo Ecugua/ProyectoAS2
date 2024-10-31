@@ -6,6 +6,8 @@ namespace ProyectoASll.Repositorio.IRepositorio
     {
         Task<T> Obtener(int id);
 
+        Task<T> ObtenerEmpleado(String id);
+
         Task<IEnumerable<T>> ObtenerTodos(Expression<Func<T, bool>> filtro = null,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
             string incluirpropiedades = null,

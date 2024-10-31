@@ -165,12 +165,336 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Acer_Predator_Orion_3000.png",
+      "PackagePath": "staticwebassets\\img\\Acer_Predator_Orion_3000.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Acer_Swift_3.png",
+      "PackagePath": "staticwebassets\\img\\Acer_Swift_3.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Alienware_Aurora_R10.png",
+      "PackagePath": "staticwebassets\\img\\Alienware_Aurora_R10.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Alienware_m15_R7.png",
+      "PackagePath": "staticwebassets\\img\\Alienware_m15_R7.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Amazon_Echo_Show_10.png",
+      "PackagePath": "staticwebassets\\img\\Amazon_Echo_Show_10.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Amazon_Fire_HD_10.png",
+      "PackagePath": "staticwebassets\\img\\Amazon_Fire_HD_10.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Apple_AirPods_Max.png",
+      "PackagePath": "staticwebassets\\img\\Apple_AirPods_Max.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Apple_HomePod_Mini.png",
+      "PackagePath": "staticwebassets\\img\\Apple_HomePod_Mini.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Apple_MacBook_Air_M2.png",
+      "PackagePath": "staticwebassets\\img\\Apple_MacBook_Air_M2.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Apple_Watch_Series_8.png",
+      "PackagePath": "staticwebassets\\img\\Apple_Watch_Series_8.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Apple_iPad_Air_5.png",
+      "PackagePath": "staticwebassets\\img\\Apple_iPad_Air_5.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Asus_ROG_Strix_GA15.png",
+      "PackagePath": "staticwebassets\\img\\Asus_ROG_Strix_GA15.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Asus_VivoBook_15.png",
+      "PackagePath": "staticwebassets\\img\\Asus_VivoBook_15.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Asus_ZenBook_14.png",
+      "PackagePath": "staticwebassets\\img\\Asus_ZenBook_14.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\AverMedia_Live_Gamer_Mini.png",
+      "PackagePath": "staticwebassets\\img\\AverMedia_Live_Gamer_Mini.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Bose_QuietComfort_45.png",
+      "PackagePath": "staticwebassets\\img\\Bose_QuietComfort_45.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Canon_EOS_90D.png",
+      "PackagePath": "staticwebassets\\img\\Canon_EOS_90D.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Canon_EOS_M50.png",
+      "PackagePath": "staticwebassets\\img\\Canon_EOS_M50.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Canon_EOS_R5.png",
+      "PackagePath": "staticwebassets\\img\\Canon_EOS_R5.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Corsair_Dark_Core_RGB.png",
+      "PackagePath": "staticwebassets\\img\\Corsair_Dark_Core_RGB.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Corsair_K95_RGB.png",
+      "PackagePath": "staticwebassets\\img\\Corsair_K95_RGB.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Dell_Inspiron_15.png",
+      "PackagePath": "staticwebassets\\img\\Dell_Inspiron_15.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Dell_XPS_13.png",
+      "PackagePath": "staticwebassets\\img\\Dell_XPS_13.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Elgato_HD60_S.png",
+      "PackagePath": "staticwebassets\\img\\Elgato_HD60_S.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Fitbit_Versa_3.png",
+      "PackagePath": "staticwebassets\\img\\Fitbit_Versa_3.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Fossil_Gen_5.png",
+      "PackagePath": "staticwebassets\\img\\Fossil_Gen_5.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Fujifilm_X_T200.png",
+      "PackagePath": "staticwebassets\\img\\Fujifilm_X_T200.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Fujifilm_X_T30.png",
+      "PackagePath": "staticwebassets\\img\\Fujifilm_X_T30.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Fujifilm_X_T4.png",
+      "PackagePath": "staticwebassets\\img\\Fujifilm_X_T4.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Garmin_Forerunner_245.png",
+      "PackagePath": "staticwebassets\\img\\Garmin_Forerunner_245.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Google_Nest_Hub.png",
+      "PackagePath": "staticwebassets\\img\\Google_Nest_Hub.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Google_Pixel_7.png",
+      "PackagePath": "staticwebassets\\img\\Google_Pixel_7.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\HP_Omen_30L.png",
+      "PackagePath": "staticwebassets\\img\\HP_Omen_30L.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\HP_Pavilion_14.png",
+      "PackagePath": "staticwebassets\\img\\HP_Pavilion_14.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\HP_Spectre_x360.png",
+      "PackagePath": "staticwebassets\\img\\HP_Spectre_x360.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\HyperX_Alloy_Elite_2.png",
+      "PackagePath": "staticwebassets\\img\\HyperX_Alloy_Elite_2.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\HyperX_Pulsefire_FPS.png",
+      "PackagePath": "staticwebassets\\img\\HyperX_Pulsefire_FPS.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Jabra_Elite_85h.png",
+      "PackagePath": "staticwebassets\\img\\Jabra_Elite_85h.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\LG_OLED_55_inch.png",
+      "PackagePath": "staticwebassets\\img\\LG_OLED_55_inch.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Lenovo_ThinkBook_14.png",
+      "PackagePath": "staticwebassets\\img\\Lenovo_ThinkBook_14.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Lenovo_ThinkPad_X1.png",
+      "PackagePath": "staticwebassets\\img\\Lenovo_ThinkPad_X1.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Lenovo_Yoga_Tab_13.png",
+      "PackagePath": "staticwebassets\\img\\Lenovo_Yoga_Tab_13.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Logitech_C920_Webcam.png",
+      "PackagePath": "staticwebassets\\img\\Logitech_C920_Webcam.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Logitech_G502.png",
+      "PackagePath": "staticwebassets\\img\\Logitech_G502.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Logitech_G_Pro.png",
+      "PackagePath": "staticwebassets\\img\\Logitech_G_Pro.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\MSI_Trident_X.png",
+      "PackagePath": "staticwebassets\\img\\MSI_Trident_X.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Microsoft_LifeCam_HD3000.png",
+      "PackagePath": "staticwebassets\\img\\Microsoft_LifeCam_HD3000.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Microsoft_Surface_Pro_9.png",
+      "PackagePath": "staticwebassets\\img\\Microsoft_Surface_Pro_9.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Nikon_D850.png",
+      "PackagePath": "staticwebassets\\img\\Nikon_D850.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Nikon_Z50.png",
+      "PackagePath": "staticwebassets\\img\\Nikon_Z50.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Nikon_Z6_II.png",
+      "PackagePath": "staticwebassets\\img\\Nikon_Z6_II.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Nintendo_Switch.png",
+      "PackagePath": "staticwebassets\\img\\Nintendo_Switch.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\OnePlus_10.png",
+      "PackagePath": "staticwebassets\\img\\OnePlus_10.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Panasonic_Lumix_G85.png",
+      "PackagePath": "staticwebassets\\img\\Panasonic_Lumix_G85.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Panasonic_Lumix_GH5.png",
+      "PackagePath": "staticwebassets\\img\\Panasonic_Lumix_GH5.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Panasonic_Lumix_GX85.png",
+      "PackagePath": "staticwebassets\\img\\Panasonic_Lumix_GX85.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Philips_Hue_Starter_Kit.png",
+      "PackagePath": "staticwebassets\\img\\Philips_Hue_Starter_Kit.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\PlayStation_5.png",
+      "PackagePath": "staticwebassets\\img\\PlayStation_5.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Razer_Blade_15.png",
+      "PackagePath": "staticwebassets\\img\\Razer_Blade_15.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Razer_Huntsman_Elite.png",
+      "PackagePath": "staticwebassets\\img\\Razer_Huntsman_Elite.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Razer_Kiyo.png",
+      "PackagePath": "staticwebassets\\img\\Razer_Kiyo.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Razer_Viper_Ultimate.png",
+      "PackagePath": "staticwebassets\\img\\Razer_Viper_Ultimate.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Samsung_Galaxy_S23.png",
+      "PackagePath": "staticwebassets\\img\\Samsung_Galaxy_S23.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Samsung_Galaxy_Tab_S8.png",
+      "PackagePath": "staticwebassets\\img\\Samsung_Galaxy_Tab_S8.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Samsung_Galaxy_Watch_5.png",
+      "PackagePath": "staticwebassets\\img\\Samsung_Galaxy_Watch_5.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Samsung_QLED_4K_TV.png",
+      "PackagePath": "staticwebassets\\img\\Samsung_QLED_4K_TV.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Samsung_SmartThings_Hub.png",
+      "PackagePath": "staticwebassets\\img\\Samsung_SmartThings_Hub.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Sennheiser_Momentum_3.png",
+      "PackagePath": "staticwebassets\\img\\Sennheiser_Momentum_3.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Sony_A6100.png",
+      "PackagePath": "staticwebassets\\img\\Sony_A6100.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Sony_A6400.png",
+      "PackagePath": "staticwebassets\\img\\Sony_A6400.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Sony_Alpha_7_IV.png",
+      "PackagePath": "staticwebassets\\img\\Sony_Alpha_7_IV.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Sony_Bravia_XR.png",
+      "PackagePath": "staticwebassets\\img\\Sony_Bravia_XR.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Sony_WH-1000XM4.png",
+      "PackagePath": "staticwebassets\\img\\Sony_WH-1000XM4.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\SteelSeries_Apex_Pro.png",
+      "PackagePath": "staticwebassets\\img\\SteelSeries_Apex_Pro.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\SteelSeries_Rival_600.png",
+      "PackagePath": "staticwebassets\\img\\SteelSeries_Rival_600.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\TCL_6_Series.png",
+      "PackagePath": "staticwebassets\\img\\TCL_6_Series.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Vizio_55_inch_4K.png",
+      "PackagePath": "staticwebassets\\img\\Vizio_55_inch_4K.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Xbox_Series_X.png",
+      "PackagePath": "staticwebassets\\img\\Xbox_Series_X.png"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Xiaomi_Mi_13.png",
+      "PackagePath": "staticwebassets\\img\\Xiaomi_Mi_13.png"
+    },
+    {
       "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\arle.jpg",
       "PackagePath": "staticwebassets\\img\\arle.jpg"
     },
     {
       "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\ei.jpg",
       "PackagePath": "staticwebassets\\img\\ei.jpg"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\hutao.jpg",
+      "PackagePath": "staticwebassets\\img\\hutao.jpg"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\iPhone_14.png",
+      "PackagePath": "staticwebassets\\img\\iPhone_14.png"
     },
     {
       "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\bootstrap\\js\\bootstrap.bundle.js",

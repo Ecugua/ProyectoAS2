@@ -3,16 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\josep\\Desktop\\ProyectoASll\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|c:\\users\\josep\\desktop\\proyectoasll\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|c:\\users\\josep\\desktop\\proyectoasll\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|c:\\users\\josep\\desktop\\proyectoasll\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|solutionrelative:views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|c:\\users\\josep\\desktop\\proyectoasll\\viewmodels\\empleadovm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|solutionrelative:viewmodels\\empleadovm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|c:\\users\\josep\\desktop\\proyectoasll\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|solutionrelative:controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|c:\\users\\josep\\desktop\\proyectoasll\\repositorio\\repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|solutionrelative:repositorio\\repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|c:\\users\\josep\\desktop\\proyectoasll\\repositorio\\irepositorio\\irepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|solutionrelative:repositorio\\irepositorio\\irepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|c:\\users\\josep\\desktop\\proyectoasll\\repositorio\\unidadtrabajo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|solutionrelative:repositorio\\unidadtrabajo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|c:\\users\\josep\\desktop\\proyectoasll\\wwwroot\\js\\categorias.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|solutionrelative:wwwroot\\js\\categorias.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|c:\\users\\josep\\desktop\\proyectoasll\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|c:\\users\\josep\\desktop\\proyectoasll\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|solutionrelative:controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|c:\\users\\josep\\desktop\\proyectoasll\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|solutionrelative:views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|c:\\users\\josep\\desktop\\proyectoasll\\views\\inventario\\inventario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -21,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|c:\\users\\josep\\desktop\\proyectoasll\\wwwroot\\js\\clientes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|solutionrelative:wwwroot\\js\\clientes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|c:\\users\\josep\\desktop\\proyectoasll\\wwwroot\\js\\categorias.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|solutionrelative:wwwroot\\js\\categorias.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8D6E0CC0-F1DD-4CF9-B079-899AFA64E750}|ProyectoASll.csproj|c:\\users\\josep\\desktop\\proyectoasll\\wwwroot\\js\\productos.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -50,7 +78,111 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmpleadoVM.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\Desktop\\ProyectoASll\\ViewModels\\EmpleadoVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\EmpleadoVM.cs",
+              "ToolTip": "C:\\Users\\josep\\Desktop\\ProyectoASll\\ViewModels\\EmpleadoVM.cs",
+              "RelativeToolTip": "ViewModels\\EmpleadoVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T17:55:18.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\Desktop\\ProyectoASll\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\josep\\Desktop\\ProyectoASll\\Controllers\\HomeController.cs*",
+              "RelativeToolTip": "Controllers\\HomeController.cs*",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAkwDAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T17:25:01.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\josep\\Desktop\\ProyectoASll\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\josep\\Desktop\\ProyectoASll\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAEAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-31T08:29:57.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UnidadTrabajo.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\Desktop\\ProyectoASll\\Repositorio\\UnidadTrabajo.cs",
+              "RelativeDocumentMoniker": "Repositorio\\UnidadTrabajo.cs",
+              "ToolTip": "C:\\Users\\josep\\Desktop\\ProyectoASll\\Repositorio\\UnidadTrabajo.cs",
+              "RelativeToolTip": "Repositorio\\UnidadTrabajo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T17:32:46.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\Desktop\\ProyectoASll\\Repositorio\\IRepositorio\\IRepositorio.cs",
+              "RelativeDocumentMoniker": "Repositorio\\IRepositorio\\IRepositorio.cs",
+              "ToolTip": "C:\\Users\\josep\\Desktop\\ProyectoASll\\Repositorio\\IRepositorio\\IRepositorio.cs",
+              "RelativeToolTip": "Repositorio\\IRepositorio\\IRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T17:32:21.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Repositorio.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\Desktop\\ProyectoASll\\Repositorio\\Repositorio.cs",
+              "RelativeDocumentMoniker": "Repositorio\\Repositorio.cs",
+              "ToolTip": "C:\\Users\\josep\\Desktop\\ProyectoASll\\Repositorio\\Repositorio.cs",
+              "RelativeToolTip": "Repositorio\\Repositorio.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACUAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T17:17:25.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmpleadoController.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\Desktop\\ProyectoASll\\Controllers\\EmpleadoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmpleadoController.cs",
+              "ToolTip": "C:\\Users\\josep\\Desktop\\ProyectoASll\\Controllers\\EmpleadoController.cs",
+              "RelativeToolTip": "Controllers\\EmpleadoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T17:28:50.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\josep\\Desktop\\ProyectoASll\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\josep\\Desktop\\ProyectoASll\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "Controllers\\ClienteController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T17:25:15.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "_LoginPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\josep\\Desktop\\ProyectoASll\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
@@ -58,38 +190,24 @@
               "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-31T08:34:06.322Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T08:34:06.322Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\josep\\Desktop\\ProyectoASll\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\josep\\Desktop\\ProyectoASll\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAEQAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-31T08:29:57.271Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\josep\\Desktop\\ProyectoASll\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\josep\\Desktop\\ProyectoASll\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAADcAAAB3AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-31T08:28:14.208Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "Inventario.cshtml",
               "DocumentMoniker": "C:\\Users\\josep\\Desktop\\ProyectoASll\\Views\\Inventario\\Inventario.cshtml",
               "RelativeDocumentMoniker": "Views\\Inventario\\Inventario.cshtml",
@@ -97,12 +215,11 @@
               "RelativeToolTip": "Views\\Inventario\\Inventario.cshtml",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-31T08:28:53.368Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T08:28:53.368Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "clientes.js",
               "DocumentMoniker": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\clientes.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\clientes.js",
@@ -110,12 +227,11 @@
               "RelativeToolTip": "wwwroot\\js\\clientes.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-10-31T08:21:39.581Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T08:21:39.581Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "productos.js",
               "DocumentMoniker": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\productos.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\productos.js",
@@ -123,12 +239,11 @@
               "RelativeToolTip": "wwwroot\\js\\productos.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-10-31T07:55:55.157Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T07:55:55.157Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "subcategorias.js",
               "DocumentMoniker": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\subcategorias.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\subcategorias.js",
@@ -136,12 +251,11 @@
               "RelativeToolTip": "wwwroot\\js\\subcategorias.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-10-31T07:52:07.669Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T07:52:07.669Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "marcas.js",
               "DocumentMoniker": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\marcas.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\marcas.js",
@@ -149,12 +263,11 @@
               "RelativeToolTip": "wwwroot\\js\\marcas.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-10-31T07:50:39.491Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T07:50:39.491Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "categorias.js",
               "DocumentMoniker": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\categorias.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\categorias.js",

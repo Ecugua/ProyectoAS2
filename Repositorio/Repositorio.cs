@@ -38,6 +38,13 @@ namespace ProyectoASll.Repositorio
             return await dbset.FindAsync(id); //genera un tipo select pero filtra solo por el id
         }
 
+        public async Task<T> ObtenerEmpleado(string id)
+        {
+            return await dbset.FindAsync(id); //genera un tipo select pero filtra solo por el id
+        }
+
+
+
         public async Task<T> ObtenerPrimero(Expression<Func<T, bool>> filtro = null, string incluirpropiedades = null, bool isTracking = true)
         {
             IQueryable<T> query = dbset;
@@ -111,5 +118,6 @@ namespace ProyectoASll.Repositorio
 
         }
 
+        
     }
 }
