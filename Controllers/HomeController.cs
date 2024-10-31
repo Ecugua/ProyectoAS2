@@ -42,9 +42,8 @@ namespace ProyectoASll.Controllers
             return View(); 
         }
 
-        public async Task<IActionResult> Catalogo()
-        {
-            
+        public IActionResult Catalogo()
+        {           
             return View(); 
         }
 

@@ -22,7 +22,14 @@
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/site.css">
     <link rel="stylesheet" href="/css/styles.css">
+    
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
 
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Chart.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -32,10 +39,10 @@
     <div class="sidebar" id="sidebar" style="display: @(SignInManager.IsSignedIn(User) ? "block" : "none");">
         <button class="close-btn" id="closeBtn">←</button>
         <ul>
-            <li><a href="/pages/home.html"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="/pages/catalogo.html"><i class="fas fa-book"></i> Cotización</a></li>
-            <li><a href="/pages/clientes.html"><i class="fas fa-user"></i> Clientes</a></li>
-            <li><a href="/pages/productos.html"><i class="fas fa-box-open"></i> Productos</a></li>
+            <li><a asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i> Home</a></li>
+            <li><a asp-area="" asp-controller="Catalogo" asp-action="Catalogo"><i class="fas fa-book"></i> Cotización</a></li>
+            <li><a asp-area="" asp-controller="Cliente" asp-action="Cliente"><i class="fas fa-user"></i> Clientes</a></li>
+            <li><a asp-area="" asp-controller="Producto" asp-action="Producto"><i class="fas fa-box-open"></i> Productos</a></li>
 
             <!-- Item Inventarios con Submenú -->
             <li class="d-block">
@@ -44,9 +51,9 @@
                     <i class="fas fa-chevron-down"></i>
                 </a>
                 <ul class="collapse list-unstyled ps-3" id="submenuInventarios">
-                    <li><a class="text-decoration-none" href="../pages/categoria.html">categorias</a></li>
-                    <li><a class="text-decoration-none" href="..//pages/subcategoria.html">Subcategorias</a></li>
-                    <li><a class="text-decoration-none" href="../pages/marca.html">Marca</a></li>
+                    <li><a class="text-decoration-none" asp-area="" asp-controller="Categoria" asp-action="Categoria">categorias</a></li>
+                    <li><a class="text-decoration-none" asp-area="" asp-controller="SubCategoria" asp-action="SubCategoria">Subcategorias</a></li>
+                    <li><a class="text-decoration-none" asp-area="" asp-controller="Inventario" asp-action="Inventario">Marca</a></li>
                 </ul>
             </li>
         </ul>
@@ -86,7 +93,7 @@
     </header>
 
     <!-- Contenedor principal -->
-    <div class="container container-layout mt-8">
+    <div class="container-layout container mt-8 justify-content-center">
 
         <div class="menu-btn-container d-flex justify-content-start align-items-center" style="display: @(SignInManager.IsSignedIn(User) ? "block" : "none");">
             <button class="menu-btn" id="menuBtn" style="display: @(SignInManager.IsSignedIn(User) ? "block" : "none");"><i class="fas fa-angle-right"></i></button>
@@ -104,6 +111,8 @@
         </div>
     </footer>
 
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Bootstrap JS (Popper y Bootstrap) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- jQuery CDN -->

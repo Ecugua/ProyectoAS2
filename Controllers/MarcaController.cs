@@ -16,7 +16,7 @@ namespace ProyectoASll.Controllers
         }
 
 
-        public IActionResult Index()
+        public IActionResult Marca()
         {
             return View();
         }

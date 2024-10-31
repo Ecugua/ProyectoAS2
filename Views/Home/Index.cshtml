@@ -11,25 +11,25 @@
         <main class="main-content">
             <section class="main-section">
                 <section class="main-section buttons-section">
-                    <a asp-area="" asp-controller="Home" asp-action="Catalogo" style="text-decoration: none">
+                    <a asp-area="" asp-controller="Catalogo" asp-action="Catalogo" style="text-decoration: none">
                         <div class="icon-button">
                             <i class="fas fa-file-invoice"></i>
                             <span>Cotizacion</span>
                         </div>
                     </a>
-                    <a href="/pages/clientes.html" style="text-decoration: none;">
+                    <a asp-area="" asp-controller="Cliente" asp-action="Cliente" style="text-decoration: none;">
                         <div class="icon-button">
                             <i class="fas fa-users"></i>
                             <span>Cliente</span>
                         </div>
                     </a>
-                    <a href="/pages/productos.html" style="text-decoration: none;">
+                    <a asp-area="" asp-controller="Producto" asp-action="Producto" style="text-decoration: none;">
                         <div class="icon-button">
                             <i class="fas fa-box-open"></i>
                             <span>Producto</span>
                         </div>
                     </a>
-                    <a href="/pages/inventario.html" style="text-decoration: none;">
+                    <a asp-area="" asp-controller="Inventario" asp-action="Inventario" style="text-decoration: none;">
                         <div class="icon-button">
                             <i class="fas fa-cubes"></i>
                             <span>Inventario</span>
@@ -65,7 +65,10 @@
                 <p class="profile-role">Empleado</p>
                 <p class="profile-contact">Tel: 502 4647-3892</p>
                 <p class="profile-email">Andreas@gmail.com</p>
-                <button class="logout-btn">Cerrar Sesión</button>
+                <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                    <button class="logout-btn">Cerrar Sesión</button>
+                </form>
+                
             </section>
 
             <!-- Sección de historial -->

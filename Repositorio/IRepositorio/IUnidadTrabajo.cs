@@ -12,6 +12,8 @@
         IProductoRepositorio ProductoRepositorio { get; }
         //generar una referencia a  los repositorios individuales de productos
         IEmpleadoRepositorio EmpleadoRepositorio { get; }
+        //generar una referencia a  los repositorios individuales de productos
+        IClienteRepositorio ClienteRepositorio { get; }
 
         //creamos un metodo asincrono para guardar los cambios
         Task Guardar();

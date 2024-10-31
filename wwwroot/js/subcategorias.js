@@ -1,16 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Arreglo de categorías para el select
-    let categorias = [
-        { id: 1, descripcion: "Laptops" },
-        { id: 2, descripcion: "Accesorios" },
-        { id: 3, descripcion: "Electrodomésticos" }
-    ];
+    // Arreglo de marcas iniciales
+    let subcategorias = [];
 
-    // Arreglo de subcategorías iniciales
-    let subcategorias = [
-        { id: 1, categoriaId: 1, descripcion: "Gaming", estado: "Activo", creado: "2024-01-01", modificado: "2024-01-10" },
-        { id: 2, categoriaId: 2, descripcion: "Accesorios PC", estado: "Activo", creado: "2024-02-01", modificado: "2024-02-05" }
-    ];
+    // Fetch initial data from API and populate DataTable
+    fetch('https://localhost:7117/SubCategoria/obtenertodos')
+        .then(response => response.json())
+        .then(data => {
+            subcategorias = data.data.map(item => ({
+                id: item.id,
+                categoriaId: item.categoriaId,
+                descripcion: item.nombre,
+                estado: item.estado ? "Activo" : "Inactivo",
+                creado: item.fechaCreacion.split('T')[0],
+                modificado: item.fechaModificacion ? item.fechaModificacion.split('T')[0] : "N/A"
+            }));
+            tablaSubcategorias.clear().rows.add(subcategorias).draw();
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+            Swal.fire({
+                icon: 'error',
+                title: 'Error al cargar datos',
+                text: 'No se pudieron cargar los datos de las subcategorias.'
+            });
+        });
 
     // Inicializar DataTable
     const tablaSubcategorias = $('#tablaSubcategorias').DataTable({

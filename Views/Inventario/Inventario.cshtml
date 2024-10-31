@@ -1,0 +1,113 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroTech</title>
+</head>
+<body>
+
+    <!-- Contenedor principal -->
+    <div class="container-layout container mt-4">
+
+        <!-- Main content -->
+        <main class="main-content">
+            <section class="main-section">
+                <section class="main-section buttons-section">
+                    <a asp-area="" asp-controller="Home" asp-action="Index" style="text-decoration: none;">
+                        <div class="icon-button">
+                            <i class="far fa-caret-square-left"></i>
+                        </div>
+                    </a>
+                    <a asp-area="" asp-controller="Categoria" asp-action="Categoria" style="text-decoration: none;">
+                        <div class="icon-button">
+                            <i class="far fa-folder"></i>
+                            <span>Categoria</span>
+                        </div>
+                    </a>
+                    <a asp-area="" asp-controller="SubCategoria" asp-action="SubCategoria" style="text-decoration: none;">
+                        <div class="icon-button">
+                            <i class="fas fa-folder-minus"></i>
+                            <span>Subcategoria</span>
+                        </div>
+                    </a>
+                    <a asp-area="" asp-controller="Marca" asp-action="Marca" style="text-decoration: none;">
+                        <div class="icon-button">
+                            <i class="far fa-registered"></i>
+                            <span>Marca</span>
+                        </div>
+                    </a>
+
+
+                </section>
+            </section>
+
+            <section class="main-section">
+
+                <div class="charts-wrapper">
+                    <!-- Gráfico de líneas -->
+                    <div class="chart-container">
+                        <canvas id="lineChart"></canvas>
+                    </div>
+
+                    <!-- Gráfico de pastel -->
+                    <div class="chart-container">
+                        <canvas id="pieChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Aside content -->
+        <aside class="aside-content">
+            <!-- Sección de perfil -->
+            <section class="aside-section profile-section">
+                <img src="./resources/Iconos/User Not foud  green 559638.png" alt="Avatar" class="profile-avatar">
+                <h3 class="profile-name">Andreas Iniesta</h3>
+                <p class="profile-role">Empleado</p>
+                <p class="profile-contact">Tel: 502 4647-3892</p>
+                <p class="profile-email">Andreas@gmail.com</p>
+                <button class="logout-btn">Cerrar Sesión</button>
+            </section>
+
+            <!-- Sección de historial -->
+            <section class="aside-section history-section">
+                <div class="history-header">
+                    <h4>Historial</h4>
+                    <a href="#" class="view-all-link">Ver todo</a>
+                </div>
+                <ul class="history-list">
+                    <li>
+                        <span class="status-dot status-active"></span>
+                        Cotización <small>Turned on • Jaquiline</small>
+                        <span class="history-time">03:20</span>
+                    </li>
+                    <li>
+                        <span class="status-dot status-active"></span>
+                        Cotización <small>Turned on • Firoz</small>
+                        <span class="history-time">01:48</span>
+                    </li>
+                    <li>
+                        <span class="status-dot status-error"></span>
+                        Agregar producto <small>Turned off • Jaquiline</small>
+                        <span class="history-time">11:36</span>
+                    </li>
+                    <li>
+                        <span class="status-dot status-inactive"></span>
+                        Cotización <small>Turned off • Jaquiline</small>
+                        <span class="history-time">09:15</span>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+
+    </div>
+</body>
+</html>
+

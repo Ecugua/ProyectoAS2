@@ -1,23 +1,35 @@
 document.addEventListener('DOMContentLoaded', () => {
-    let subcategorias = [
-        { id: 1, descripcion: "Gaming" },
-        { id: 2, descripcion: "Accesorios PC" },
-        { id: 3, descripcion: "Electrodomésticos" }
-    ];
+    // Arreglo de marcas iniciales
+    let productos = [];
 
-    let marcas = [
-        { id: 1, nombre: "Asus" },
-        { id: 2, nombre: "Logitech" },
-        { id: 3, nombre: "Samsung" }
-    ];
-
-    let productos = [
-        { 
-            id: 1, modelo: "TUF Gaming", numeroSerie: "AS12345", imagenURL: "../resources/laptop.png", 
-            precio: 1500, stock: 10, subcategoriaId: 1, marcaId: 1, disponible: "Sí", 
-            estado: "Activo", creado: "2024-01-01", modificado: "2024-01-10" 
-        }
-    ];
+    // Fetch initial data from API and populate DataTable
+    fetch('https://localhost:7117/Producto/obtenertodos')
+        .then(response => response.json())
+        .then(data => {
+            productos = data.data.map(item => ({
+                id: item.id,
+                modelo: item.modelo,
+                numeroSerie: item.numeroSerie,
+                imagenURL: "/img/" + item.imagenURL,
+                precio: item.precio,
+                stock: item.stock,
+                subcategoriaId: item.subCategoria.id ? item.subCategoria.nombre : "Sin subcategoría", // Obtén el nombre de subcategoria
+                marcaId: item.marca.id ? item.marca.nombre : "Sin marca", // Obtén el nombre de la marca
+                disponible: item.disponible ? "Disponible" : "No Disponible",
+                estado: item.estado ? "Activo" : "N/A",
+                creado: item.fechaCreacion ? item.fechaCreacion.split('T')[0] : "N/A",
+                modificado: item.fechaModificacion ? item.fechaModificacion.split('T')[0] : "N/A"
+            }));
+            tablaProductos.clear().rows.add(productos).draw();
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+            Swal.fire({
+                icon: 'error',
+                title: 'Error al cargar datos',
+                text: 'No se pudieron cargar los datos de los productos.'
+            });
+        });
 
     const tablaProductos = $('#tablaProductos').DataTable({
         data: productos,

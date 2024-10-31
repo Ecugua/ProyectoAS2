@@ -1,10 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Arreglo de categorías iniciales
-    let categorias = [
-        { id: 1, descripcion: "Laptops", estado: "Activo", creado: "2024-01-01", modificado: "2024-01-10" },
-        { id: 2, descripcion: "Accesorios", estado: "Activo", creado: "2024-02-01", modificado: "2024-02-05" },
-        { id: 3, descripcion: "Electrodomésticos", estado: "Inactivo", creado: "2024-03-01", modificado: "2024-03-10" }
-    ];
+    // Arreglo de marcas iniciales
+    let categorias = [];
+
+    // Fetch initial data from API and populate DataTable
+    fetch('https://localhost:7117/Categoria/obtenertodos')
+        .then(response => response.json())
+        .then(data => {
+            categorias = data.data.map(item => ({
+                id: item.id,
+                descripcion: item.nombre,
+                estado: item.estado ? "Activo" : "Inactivo",
+                creado: item.fechaCreacion.split('T')[0],
+                modificado: item.fechaModificacion ? item.fechaModificacion.split('T')[0] : "N/A"
+            }));
+            tablaCategorias.clear().rows.add(categorias).draw();
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+            Swal.fire({
+                icon: 'error',
+                title: 'Error al cargar datos',
+                text: 'No se pudieron cargar los datos de las categorias.'
+            });
+        });
 
     // Inicializar DataTable
     const tablaCategorias = $('#tablaCategorias').DataTable({

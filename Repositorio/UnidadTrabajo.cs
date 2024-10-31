@@ -17,6 +17,8 @@ namespace ProyectoASll.Repositorio
         public IProductoRepositorio ProductoRepositorio { get; private set; }
         //creamos una propiedad para obtener y modificar la informacion de empleado
         public IEmpleadoRepositorio EmpleadoRepositorio { get; private set; }
+        //creamos una propiedad para obtener y modificar la informacion de cliente
+        public IClienteRepositorio ClienteRepositorio { get; private set; }
 
         public UnidadTrabajo(ApplicationDbContext context)
         {
@@ -31,6 +33,8 @@ namespace ProyectoASll.Repositorio
             ProductoRepositorio = new ProductoRepositorio(context);
             //inicializamos la propiedad creada del empleado
             EmpleadoRepositorio = new EmpleadoRepositorio(context);
+            //inicializamos la propiedad creada del cliente
+            ClienteRepositorio = new ClienteRepositorio(context);
         }
 
         public void Dispose()

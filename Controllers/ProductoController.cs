@@ -18,7 +18,7 @@ namespace ProyectoASll.Controllers
             _webHostEnvironment = webHostEnvironment;
         }
 
-        public IActionResult Index()
+        public IActionResult Producto()
         {
             return View();
         }
