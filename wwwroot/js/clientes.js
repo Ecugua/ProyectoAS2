@@ -3,10 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
     let clientes = [];
 
     // Fetch initial data from API and populate DataTable
-    fetch('https://localhost:7117/Cliente/obtenertodos')
+    fetch('/Cliente/obtenertodos')
         .then(response => response.json())
         .then(data => {
             clientes = data.data.map(item => ({
+                id: item.id,
                 nombre: item.nombre,
                 apellido: item.apellido,
                 telefono: item.numero,
@@ -20,119 +21,61 @@ document.addEventListener('DOMContentLoaded', () => {
             Swal.fire({
                 icon: 'error',
                 title: 'Error al cargar datos',
-                text: 'No se pudieron cargar los datos de las categorias.'
+                text: 'No se pudieron cargar los datos de los clientes.'
             });
         });
         // Inicializar DataTable
         const tablaClientes = $('#tablaClientes').DataTable({
             data: clientes,
             columns: [
+                { data: 'id' },
                 { data: 'nombre' },
                 { data: 'apellido' },
                 { data: 'telefono' },
                 { data: 'email' },
                 { data: 'direccion' },
                 {
-                    data: null,
-                    render: (data, type, row) => `
-                        <button class="btn btn-warning btn-sm btn-editar" data-id="${row.id}">Editar</button>
-                        <button class="btn btn-danger btn-sm btn-eliminar" data-id="${row.id}">Eliminar</button>
-                    `
+                    "data": "id",
+                    "render": function (data) {
+                        return `
+                        <div class ="text-center">
+                            <a href="/Cliente/Upsert/${data}" class="btn btn-success text-white" style="cursor:pointer">
+                                <i class="bi bi-pencil"></i>
+                            </a>
+
+                            <a onclick=Delete("/Cliente/Delete/${data}") class="btn btn-danger text-white" style="cursor:pointer ">
+                                <i class="bi bi-trash"></i>
+                            </a>
+
+                        </div>
+                    `;
+                    },
                 }
             ]
-        });
-    
-        // Limpiar los inputs al abrir el modal de agregar cliente
-        $('#agregarClienteModal').on('show.bs.modal', () => {
-            $('#formAgregarCliente')[0].reset();
-        });
-    
-        // Agregar cliente con notificación de confirmación
-        $('#formAgregarCliente').on('submit', function (e) {
-            e.preventDefault();
-            const nuevoCliente = {
-                id: Date.now(),
-                nombre: $('#nombreAgregar').val(),
-                apellido: $('#apellidoAgregar').val(),
-                telefono: $('#telefonoAgregar').val(),
-                email: $('#emailAgregar').val(),
-                direccion: $('#direccionAgregar').val()
-            };
-            clientes.push(nuevoCliente);
-            tablaClientes.row.add(nuevoCliente).draw();
-            bootstrap.Modal.getInstance(document.getElementById('agregarClienteModal')).hide();
-    
-            Swal.fire({
-                icon: 'success',
-                title: 'Cliente agregado con éxito',
-                confirmButtonText: 'Aceptar'
-            });
-        });
-    
-        // Eliminar cliente con confirmación
-        $('#tablaClientes tbody').on('click', '.btn-eliminar', function () {
-            const id = $(this).data('id');
-            Swal.fire({
-                title: '¿Estás seguro?',
-                text: 'Esta acción no se puede deshacer',
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonText: 'Sí, eliminar',
-                cancelButtonText: 'Cancelar'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    clientes = clientes.filter(cliente => cliente.id !== id);
-                    tablaClientes.row($(this).parents('tr')).remove().draw();
-    
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'Cliente eliminado',
-                        confirmButtonText: 'Aceptar'
-                    });
+        });  
+});
+function Delete(url) {
+    swal({
+        "title": "¿Esta seguro de eliminar el cliente?",
+        "text": "Este registro no se podra recuperar",
+        "icon": "warning",
+        "buttons": true,
+        "dangerMode": true
+    }).then((borrar) => {
+        if (borrar) {
+            $.ajax({
+                type: "POST",
+                url: url,
+                success: function (data) {
+                    if (data.success) {
+                        toastr.success(data.message);
+                        tablaSubcategorias.ajax.reload();
+                    }
+                    else {
+                        toastr.error(data.message);
+                    }
                 }
             });
-        });
-    
-        // Abrir el modal de edición con datos precargados
-        $('#tablaClientes tbody').on('click', '.btn-editar', function () {
-            const id = $(this).data('id');
-            const cliente = clientes.find(c => c.id === id);
-    
-            // Precargar los datos en el formulario de edición
-            $('#clienteIdEditar').val(cliente.id);
-            $('#nombreEditar').val(cliente.nombre);
-            $('#apellidoEditar').val(cliente.apellido);
-            $('#telefonoEditar').val(cliente.telefono);
-            $('#emailEditar').val(cliente.email);
-            $('#direccionEditar').val(cliente.direccion);
-    
-            // Mostrar el modal de edición
-            const modal = new bootstrap.Modal(document.getElementById('editarClienteModal'));
-            modal.show();
-        });
-    
-        // Guardar cambios del cliente editado
-        $('#formEditarCliente').on('submit', function (e) {
-            e.preventDefault();
-            const id = parseInt($('#clienteIdEditar').val());
-    
-            // Encontrar y actualizar los datos del cliente
-            const cliente = clientes.find(c => c.id === id);
-            cliente.nombre = $('#nombreEditar').val();
-            cliente.apellido = $('#apellidoEditar').val();
-            cliente.telefono = $('#telefonoEditar').val();
-            cliente.email = $('#emailEditar').val();
-            cliente.direccion = $('#direccionEditar').val();
-    
-            // Actualizar la tabla y cerrar el modal
-            tablaClientes.clear().rows.add(clientes).draw();
-            bootstrap.Modal.getInstance(document.getElementById('editarClienteModal')).hide();
-    
-            Swal.fire({
-                icon: 'success',
-                title: 'Cliente editado con éxito',
-                confirmButtonText: 'Aceptar'
-            });
-        });
-    });
-    
+        }
+    })
+}

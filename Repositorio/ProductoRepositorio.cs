@@ -44,7 +44,7 @@ namespace ProyectoASll.Repositorio
         {
             if (obj == "SubCategoria")
             {
-                return _context.Categorias.Select(c => new SelectListItem
+                return _context.SubCategorias.Select(c => new SelectListItem
                 {
                     Text = c.Nombre,
                     Value = c.Id.ToString()

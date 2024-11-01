@@ -35,6 +35,7 @@ namespace ProyectoASll.Repositorio
                 _context.SaveChanges();
             }
         }
+
         //metodo llena la lista con los elementos categoria o marcas
         public IEnumerable<SelectListItem> ObtenerTodosLista(string obj)
         {

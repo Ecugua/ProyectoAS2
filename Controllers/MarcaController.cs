@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ProyectoASll.Models;
 using ProyectoASll.Repositorio.IRepositorio;
 
 namespace ProyectoASll.Controllers
@@ -19,6 +20,54 @@ namespace ProyectoASll.Controllers
         public IActionResult Marca()
         {
             return View();
+        }
+
+        //metodo para crear y actualizar las marcas
+        public async Task<IActionResult> Upsert(int? id)
+        {
+            //hacer referencia al modelo MMarca
+            MMarca marca = new MMarca();
+            if (id == null)
+            {
+                //crear una nueva marca
+                marca.Estado = true;
+                return View(marca);
+            }
+            else
+            {
+                // actualizar la marca
+                marca = await _unidadTrabajo.MarcaRepositorio.Obtener(id.GetValueOrDefault());
+                if (marca == null)
+                {
+                    return NotFound();
+                }
+                return View(marca);
+            }
+        }
+
+        //metodo post del Upsert
+        [HttpPost]
+        [ValidateAntiForgeryToken]//envia los datos con un token de validacion y protege contra ataques csrfe
+        public async Task<IActionResult> Upsert(MMarca marca)
+        {
+            if (ModelState.IsValid)
+            {
+                if (marca.Id == 0)
+                {
+                    await _unidadTrabajo.MarcaRepositorio.Agregar(marca);
+                    TempData[DefinicionesEstaticas.Exitosa] = "Marca Creada Exitosamente";
+                }
+                else
+                {
+                    marca.FechaModificacion = DateTime.Now;
+                    _unidadTrabajo.MarcaRepositorio.Actualizar(marca);
+                    TempData[DefinicionesEstaticas.Exitosa] = "Marca Actualizada Exitosamente";
+                }
+                await _unidadTrabajo.Guardar();
+                return RedirectToAction(nameof(Marca));
+            }
+            TempData[DefinicionesEstaticas.Error] = "Error al guardar o actualizar la marca";
+            return View(marca);
         }
 
         #region API

@@ -1,0 +1,150 @@
+﻿@model ProyectoASll.ViewModels.ProductoVM
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var titulo = "Crear Producto";
+}
+
+<form method="post">
+    <div style="padding-left:15%; padding-right:15%; padding-bottom:inherit.4rem;">
+        <div asp-validation-summary="ModelOnly" class="text-danger">
+
+        </div>
+        <!--logica para actulizar o crear-->
+        @if(Model.Mproducto.Id != 0)
+        {
+            //actualizar la marca 
+            titulo = "Actualizar Producto";
+            //nos servira para ver si existe o no el identificacor de la marca
+            <input type="hidden" asp-for="Mproducto.Id" id="id" />
+        }
+        <div class="col border-bottom p-0">
+            <h2 class="text-primary">@titulo</h2>
+        </div>
+
+        <!--campos del formulario-->
+        <div class="row mb-2 mt-2">
+            <div class="accept-policy col-md-6">
+                <label>Modelo</label>
+                <!--nos servira para identificar si el nombre de la categoria existe o no-->
+                <input type="text" asp-for="Mproducto.Modelo" class="form-control" placeholder="Modelo del producto" id="nombre" />
+                <span asp-validation-for="Mproducto.Modelo" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row mb-2 mt-2">
+            <div class="accept-policy col-md-6">
+                <label>Serie</label>
+                <input type="text" asp-for="Mproducto.NumeroSerie" class="form-control" placeholder="Modelo del producto" id="nombre" />
+                <span asp-validation-for="Mproducto.NumeroSerie" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row mb-2 mt-2">
+            <div class="accept-policy col-md-6">
+                <label>Imagen</label>
+                <input type="text" asp-for="Mproducto.ImagenURL" class="form-control" placeholder="Modelo del producto" id="nombre" />
+                <span asp-validation-for="Mproducto.ImagenURL" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row mb-2 mt-2">
+            <div class="accept-policy col-md-6">
+                <label>Precio</label>
+                <input type="text" asp-for="Mproducto.Precio" class="form-control" placeholder="Modelo del producto" id="nombre" />
+                <span asp-validation-for="Mproducto.Precio" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row mb-2 mt-2">
+            <div class="accept-policy col-md-6">
+                <label>Stock</label>
+                <input type="text" asp-for="Mproducto.Stock" class="form-control" placeholder="Modelo del producto" id="nombre" />
+                <span asp-validation-for="Mproducto.Stock" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <label>SubCategoria</label>
+                <select asp-for="Mproducto.SubCategoriaId" asp-items="@(Model.SubCategoriaLista)" class="form-select">
+                    <option disabled selected>Seleccione una SubCategoria</option>
+                </select>
+                <span asp-validation-for="Mproducto.SubCategoriaId" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <label>Marca</label>
+                <select asp-for="Mproducto.MarcaId" asp-items="@(Model.MarcaLista)" class="form-select">
+                    <option disabled selected>Seleccione una Marca</option>
+                </select>
+                <span asp-validation-for="Mproducto.MarcaId" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row mb-2 mt-2">
+            <div class="accept-policy col-md-6">
+                <label>Disponible</label>
+                <select asp-for="Mproducto.Disponible" class="form-select">
+                    <option value ="true">Disponible</option>
+                    <option value="false">No Disponible</option>
+                </select>
+                <span asp-validation-for="Mproducto.Disponible" class="text-danger"></span>
+            </div>
+        </div>
+
+
+        <!--Seccion de botones con las vistas parciales-->
+        <div>
+            @if (Model.Mproducto.Id != 0)
+            {
+                <button type="submit" class="btn btn-primary" asp-route-id="@Model.Mproducto.Id">
+                    <i class="bi bi-pencil-square"></i> Guardar Cambios
+                </button>
+
+                <a asp-action="Producto" class="btn btn-success">
+                    <i class="bi bi-arrow-return-left"></i> Regresar
+                </a>
+            }
+            else
+            {
+                <button type="submit" class="btn btn-primary" onfocus="false">
+                    <i class="bi bi-patch-plus"></i> Crear
+                </button>
+
+                <a asp-action="Producto" class="btn btn-success">
+                    <i class="bi bi-arrow-return-left"></i> Regresar
+                </a>
+            }
+        </div>
+    </div>
+</form>
+
+<!--seccion de la validacion-->
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        document.getElementById("nombre").addEventListener('change', function () {
+            //crear una funcion para validar el nombre
+            validarNombre();
+        });
+
+        function validarNombre(){
+            var url = '@Url.Content("~/")' + "/Producto/ValidarNombre";
+            var id = '#id';
+            var nombre = '#nombre';
+
+            $.getJSON(url, {id: $(id).val(), nombre: $(nombre).val() }, function (data) {
+                $.each(data, function (key, value) {
+                    if (value) {
+                        var nombre = document.getElementById("nombre");
+                        swal("Error", "El modelo del producto ya existe", "error");
+                        nombre.value = "";
+                    }
+                });
+            })
+        }
+    </script>
+}
+

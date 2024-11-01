@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let subcategorias = [];
 
     // Fetch initial data from API and populate DataTable
-    fetch('https://localhost:7117/SubCategoria/obtenertodos')
+    fetch('/SubCategoria/obtenertodos')
         .then(response => response.json())
         .then(data => {
             subcategorias = data.data.map(item => ({
@@ -36,82 +36,49 @@ document.addEventListener('DOMContentLoaded', () => {
             { data: 'creado' },
             { data: 'modificado' },
             {
-                data: null,
-                render: (data, type, row) => `
-                    <button class="btn btn-warning btn-sm btn-editar" data-id="${row.id}">Editar</button>
-                    <button class="btn btn-danger btn-sm btn-desactivar" data-id="${row.id}">
-                        ${row.estado === "Activo" ? "Desactivar" : "Activar"}
-                    </button>
-                `
+                "data": "id",
+                "render": function (data) {
+                    return `
+                        <div class ="text-center">
+                            <a href="/SubCategoria/Upsert/${data}" class="btn btn-success text-white" style="cursor:pointer">
+                                <i class="bi bi-pencil"></i>
+                            </a>
+
+                            <a onclick=Delete("/SubCategoria/Delete/${data}") class="btn btn-danger text-white" style="cursor:pointer ">
+                                <i class="bi bi-trash"></i>
+                            </a>
+
+                        </div>
+                    `;
+                },
             }
         ]
     });
 
-    // Llenar los select con categorías
-    function cargarCategoriasSelect() {
-        categorias.forEach(categoria => {
-            const option = `<option value="${categoria.id}">${categoria.descripcion}</option>`;
-            $('#categoriaIdAgregar, #categoriaIdEditar').append(option);
-        });
-    }
-    cargarCategoriasSelect();
-
-    // Agregar subcategoría
-    $('#formAgregarSubcategoria').on('submit', function (e) {
-        e.preventDefault();
-        const nuevaSubcategoria = {
-            id: Date.now(),
-            categoriaId: parseInt($('#categoriaIdAgregar').val()),
-            descripcion: $('#descripcionAgregar').val(),
-            estado: $('#estadoAgregar').val(),
-            creado: new Date().toISOString().split('T')[0],
-            modificado: new Date().toISOString().split('T')[0]
-        };
-        subcategorias.push(nuevaSubcategoria);
-        tablaSubcategorias.row.add(nuevaSubcategoria).draw();
-        bootstrap.Modal.getInstance(document.getElementById('agregarSubcategoriaModal')).hide();
-
-        Swal.fire({
-            icon: 'success',
-            title: 'Subcategoría agregada con éxito',
-            confirmButtonText: 'Aceptar'
-        });
-    });
-
-    // Editar subcategoría
-    $('#tablaSubcategorias tbody').on('click', '.btn-editar', function () {
-        const id = $(this).data('id');
-        const subcategoria = subcategorias.find(s => s.id === id);
-
-        // Precargar datos en el modal de edición
-        $('#subcategoriaIdEditar').val(subcategoria.id);
-        $('#categoriaIdEditar').val(subcategoria.categoriaId);
-        $('#descripcionEditar').val(subcategoria.descripcion);
-        $('#estadoEditar').val(subcategoria.estado);
-
-        const modal = new bootstrap.Modal(document.getElementById('editarSubcategoriaModal'));
-        modal.show();
-    });
-
-    // Guardar cambios en la subcategoría editada
-    $('#formEditarSubcategoria').on('submit', function (e) {
-        e.preventDefault();
-        const id = parseInt($('#subcategoriaIdEditar').val());
-        const subcategoria = subcategorias.find(s => s.id === id);
-
-        // Actualizar los datos
-        subcategoria.categoriaId = parseInt($('#categoriaIdEditar').val());
-        subcategoria.descripcion = $('#descripcionEditar').val();
-        subcategoria.estado = $('#estadoEditar').val();
-        subcategoria.modificado = new Date().toISOString().split('T')[0];
-
-        tablaSubcategorias.clear().rows.add(subcategorias).draw();
-        bootstrap.Modal.getInstance(document.getElementById('editarSubcategoriaModal')).hide();
-
-        Swal.fire({
-            icon: 'success',
-            title: 'Subcategoría editada con éxito',
-            confirmButtonText: 'Aceptar'
-        });
-    });
+    
 });
+function Delete(url) {
+    swal({
+        "title": "¿Esta seguro de eliminar la marca?",
+        "text": "Este registro no se podra recuperar",
+        "icon": "warning",
+        "buttons": true,
+        "dangerMode": true
+    }).then((borrar) => {
+        if (borrar) {
+            $.ajax({
+                type: "POST",
+                url: url,
+                success: function (data) {
+                    if (data.success) {
+                        toastr.success(data.message);
+                        tablaSubcategorias.ajax.reload();
+                    }
+                    else {
+                        toastr.error(data.message);
+                    }
+                }
+            });
+        }
+    })
+}

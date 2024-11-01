@@ -1,7 +1,8 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using ProyectoASll.Models;
 using ProyectoASll.Repositorio.IRepositorio;
-
+using ProyectoASll.ViewModels;
 namespace ProyectoASll.Controllers
 {
     public class ProductoController : Controller
@@ -23,6 +24,64 @@ namespace ProyectoASll.Controllers
             return View();
         }
 
+        //metodo para crear y actualizar los productos
+        public async Task<IActionResult> Upsert(int? id)
+        {
+            //generamos un instancia al productoVM
+            ProductoVM productovm = new ProductoVM()
+            {
+                Mproducto = new MProducto(),
+                SubCategoriaLista = _unidadTrabajo.ProductoRepositorio.ObtenerTodosLista("SubCategoria"),
+                MarcaLista = _unidadTrabajo.ProductoRepositorio.ObtenerTodosLista("Marca")
+            };
+            //validad si vamos a crear un nuevo producto o si lo vamos a actualizar
+            if (id == null)
+            {
+                //crear nuevo producto
+                return View(productovm);
+            }
+            else
+            {
+                productovm.Mproducto = await _unidadTrabajo.ProductoRepositorio.Obtener(id.GetValueOrDefault());
+                //validamos si existe
+                if (productovm.Mproducto == null)
+                {
+                    return NotFound();
+                }
+                return View(productovm);
+            }
+
+        }
+        //metodo post del Upsert
+        [HttpPost]
+        [ValidateAntiForgeryToken]//envia los datos con un token de validacion y protege contra ataques csrfe
+        public async Task<IActionResult> Upsert(ProductoVM productovm)
+        {
+
+            if (ModelState.IsValid)
+            {
+
+                if (productovm.Mproducto.Id == 0)
+                {
+                    //creae nuevo producto
+                    await _unidadTrabajo.ProductoRepositorio.Agregar(productovm.Mproducto);
+                    TempData[DefinicionesEstaticas.Exitosa] = "Producto Creado Exitosamente";
+                }
+                else
+                {
+                    //actualizar producto
+                    _unidadTrabajo.ProductoRepositorio.Actualizar(productovm.Mproducto);
+                    TempData[DefinicionesEstaticas.Exitosa] = "Producto Actualizado Exitosamente";
+                }
+                await _unidadTrabajo.Guardar();
+                return RedirectToAction(nameof(Producto));
+            }
+            // Recarga listas de categorías y marcas en caso de error de validación
+            productovm.SubCategoriaLista = _unidadTrabajo.ProductoRepositorio.ObtenerTodosLista("SubCategoria");
+            productovm.MarcaLista = _unidadTrabajo.ProductoRepositorio.ObtenerTodosLista("Marca");
+            TempData[DefinicionesEstaticas.Error] = "Error al guardar o actualizar el Producto";
+            return View(productovm);
+        }
         #region API
 
         [HttpGet]

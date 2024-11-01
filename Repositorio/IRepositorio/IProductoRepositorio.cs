@@ -1,4 +1,5 @@
-﻿using ProyectoASll.Models;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using ProyectoASll.Models;
 
 namespace ProyectoASll.Repositorio.IRepositorio
 {
@@ -6,5 +7,7 @@ namespace ProyectoASll.Repositorio.IRepositorio
     {
         //el metodo de actualizar sera individual por cada modelo
         void Actualizar(MProducto mproducto);
+        //metodo para obtener las listas de categorias y marcas
+        IEnumerable<SelectListItem> ObtenerTodosLista(string obj);
     }
 }

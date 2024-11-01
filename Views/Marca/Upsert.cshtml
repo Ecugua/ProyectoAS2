@@ -1,0 +1,98 @@
+﻿@model ProyectoASll.Models.MMarca
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var titulo = "Crear Marca";
+}
+
+<form method="post">
+    <div style="padding-left:15%; padding-right:15%; padding-bottom:inherit.4rem;">
+        <div asp-validation-summary="ModelOnly" class="text-danger">
+
+        </div>
+        <!--logica para actulizar o crear-->
+        @if(Model.Id != 0)
+        {
+            //actualizar la marca 
+            titulo = "Actualizar Marca";
+            //nos servira para ver si existe o no el identificacor de la marca
+            <input type="hidden" asp-for="Id" id="id" />
+        }
+        <div class="col border-bottom p-0">
+            <h2 class="text-primary">@titulo</h2>
+        </div>
+
+        <!--campos del formulario-->
+        <div class="row mb-2 mt-2">
+            <div class="accept-policy col-md-6">
+                <label>Nombre</label>
+                <!--nos servira para identificar si el nombre de la marca existe o no-->
+                <input type="text" asp-for="Nombre" class="form-control" placeholder="Nombre de la marca" id="nombre" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row mb-2 mt-2">
+            <div class="accept-policy col-md-6">
+                <label>Estado</label>
+                <select asp-for="Estado" class="form-select">
+                    <option value ="true">Activo</option>
+                    <option value="false">Inactivo</option>
+                </select>
+                <span asp-validation-for="Estado" class="text-danger"></span>
+            </div>
+        </div>
+
+        <!--Seccion de botones con las vistas parciales-->
+        <div>
+            @if (Model.Id != 0)
+            {
+                <button type="submit" class="btn btn-primary" asp-route-id="@Model.Id">
+                    <i class="bi bi-pencil-square"></i> Guardar Cambios
+                </button>
+
+                <a asp-action="Marca" class="btn btn-success">
+                    <i class="bi bi-arrow-return-left"></i> Regresar
+                </a>
+            }
+            else
+            {
+                <button type="submit" class="btn btn-primary" onfocus="false">
+                  <i class="bi bi-patch-plus"></i> Crear
+                 </button>
+
+                <a asp-action="Marca" class="btn btn-success">
+                    <i class="bi bi-arrow-return-left"></i> Regresar
+                </a>
+            }
+        </div>
+    </div>
+</form>
+
+<!--seccion de la validacion-->
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        document.getElementById("nombre").addEventListener('change', function () {
+            //crear una funcion para validar el nombre
+            validarNombre();
+        });
+
+        function validarNombre(){
+            var url = '@Url.Content("~/")' + "/Marca/ValidarNombre";
+            var id = '#id';
+            var nombre = '#nombre';
+
+            $.getJSON(url, {id: $(id).val(), nombre: $(nombre).val() }, function (data) {
+                $.each(data, function (key, value) {
+                    if (value) {
+                        var nombre = document.getElementById("nombre");
+                        swal("Error", "El nombre de la marca ya existe", "error");
+                        nombre.value = "";
+                    }
+                });
+            })
+        }
+    </script>
+}
+

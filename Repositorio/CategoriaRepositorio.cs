@@ -1,4 +1,5 @@
-﻿using ProyectoASll.Data;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using ProyectoASll.Data;
 using ProyectoASll.Models;
 using ProyectoASll.Repositorio.IRepositorio;
 using System;
@@ -32,6 +33,20 @@ namespace ProyectoASll.Repositorio
                 //guardamos la informacion que tiene el modelo en la base de datos
                 _context.SaveChanges();
             }
+        }
+
+        //metodo llena la lista con los elementos categoria o marcas
+        public IEnumerable<SelectListItem> ObtenerTodosLista(string obj)
+        {
+            if (obj == "Categoria")
+            {
+                return _context.Categorias.Where(c => c.Estado == true).Select(c => new SelectListItem
+                {
+                    Text = c.Nombre,
+                    Value = c.Id.ToString()
+                });
+            }
+            return null;
         }
     }
 }

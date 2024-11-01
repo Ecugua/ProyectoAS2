@@ -198,8 +198,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXENhdGVnb3JpYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/josep/Desktop/ProyectoASll/Views/Categoria/Upsert.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXFVwc2VydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/josep/Desktop/ProyectoASll/Views/Cliente/Cliente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDbGllbnRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josep/Desktop/ProyectoASll/Views/Cliente/Upsert.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxVcHNlcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/josep/Desktop/ProyectoASll/Views/Cotizacion/Cotizacion.cshtml]
@@ -226,12 +234,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FcTWFyY2EuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/josep/Desktop/ProyectoASll/Views/Marca/Upsert.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FcVXBzZXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/josep/Desktop/ProyectoASll/Views/Producto/Producto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cUHJvZHVjdG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/josep/Desktop/ProyectoASll/Views/Producto/Upsert.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cVXBzZXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/josep/Desktop/ProyectoASll/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josep/Desktop/ProyectoASll/Views/Shared/_BotonesActualizarRegresar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Cb3RvbmVzQWN0dWFsaXphclJlZ3Jlc2FyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josep/Desktop/ProyectoASll/Views/Shared/_BotonesCrearRegresar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Cb3RvbmVzQ3JlYXJSZWdyZXNhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/josep/Desktop/ProyectoASll/Views/Shared/_LoginPartial.cshtml]
@@ -244,6 +268,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/josep/Desktop/ProyectoASll/Views/SubCategoria/SubCategoria.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViQ2F0ZWdvcmlhXFN1YkNhdGVnb3JpYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/josep/Desktop/ProyectoASll/Views/SubCategoria/Upsert.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViQ2F0ZWdvcmlhXFVwc2VydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/josep/Desktop/ProyectoASll/Views/_ViewImports.cshtml]
