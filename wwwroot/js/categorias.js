@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let categorias = [];
 
     // Fetch initial data from API and populate DataTable
-    fetch('https://localhost:7117/Categoria/obtenertodos')
+    fetch('/Categoria/obtenertodos')
         .then(response => response.json())
         .then(data => {
             categorias = data.data.map(item => ({

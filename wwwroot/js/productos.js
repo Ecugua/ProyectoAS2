@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Arreglo de marcas iniciales
+    // Arreglo de productos iniciales
     let productos = [];
 
     // Fetch initial data from API and populate DataTable
@@ -10,15 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 id: item.id,
                 modelo: item.modelo,
                 numeroSerie: item.numeroSerie,
-                imagenURL: "/img/" + item.imagenURL,
+                imagenURL: item.imagenURL ? `/img/${item.imagenURL}` : "/img/default.png", // Ruta correcta
                 precio: item.precio,
                 stock: item.stock,
-                subcategoriaId: item.subCategoria.id ? item.subCategoria.nombre : "Sin subcategoría", // Obtén el nombre de subcategoria
-                marcaId: item.marca.id ? item.marca.nombre : "Sin marca", // Obtén el nombre de la marca
-                disponible: item.disponible ? "Disponible" : "No Disponible",
-                estado: item.estado ? "Activo" : "N/A",
-                creado: item.fechaCreacion ? item.fechaCreacion.split('T')[0] : "N/A",
-                modificado: item.fechaModificacion ? item.fechaModificacion.split('T')[0] : "N/A"
+                subcategoriaId: item.subCategoria ? item.subCategoria.nombre : "Sin subcategoría",
+                marcaId: item.marca ? item.marca.nombre : "Sin marca",
+                disponible: item.disponible ? "Disponible" : "No Disponible"
             }));
             tablaProductos.clear().rows.add(productos).draw();
         })
@@ -47,32 +44,31 @@ document.addEventListener('DOMContentLoaded', () => {
             { data: 'marcaId' },
             { data: 'disponible' },
             {
-                "data": "id",
-                "render": function (data) {
+                data: 'id',
+                render: function (data) {
                     return `
-                        <div class ="text-center">
+                        <div class="text-center">
                             <a href="/Producto/Upsert/${data}" class="btn btn-success text-white" style="cursor:pointer">
                                 <i class="bi bi-pencil"></i>
                             </a>
-
-                            <a onclick=Delete("/Producto/Delete/${data}") class="btn btn-danger text-white" style="cursor:pointer ">
+                            <a onclick=Delete("/Producto/Delete/${data}") class="btn btn-danger text-white" style="cursor:pointer">
                                 <i class="bi bi-trash"></i>
                             </a>
-
                         </div>
                     `;
-                },
+                }
             }
         ]
-    });  
+    });
 });
+
 function Delete(url) {
     swal({
-        "title": "¿Esta seguro de eliminar la marca?",
-        "text": "Este registro no se podra recuperar",
-        "icon": "warning",
-        "buttons": true,
-        "dangerMode": true
+        title: "¿Está seguro de eliminar el producto?",
+        text: "Este registro no se podrá recuperar",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true
     }).then((borrar) => {
         if (borrar) {
             $.ajax({
@@ -81,13 +77,12 @@ function Delete(url) {
                 success: function (data) {
                     if (data.success) {
                         toastr.success(data.message);
-                        tablaSubcategorias.ajax.reload();
-                    }
-                    else {
+                        $('#tablaProductos').DataTable().ajax.reload();
+                    } else {
                         toastr.error(data.message);
                     }
                 }
             });
         }
-    })
+    });
 }

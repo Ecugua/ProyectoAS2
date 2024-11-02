@@ -14,6 +14,15 @@
         IEmpleadoRepositorio EmpleadoRepositorio { get; }
         //generar una referencia a  los repositorios individuales de productos
         IClienteRepositorio ClienteRepositorio { get; }
+        //generar una referencia a  los repositorios individuales de cotizacion
+        ICotizacionRepositorio CotizacionRepositorio { get; }
+        //generar una referencia a  los repositorios individuales de detalle cotizacion
+        IDetalleCotizacionRepositorio DetalleCotizacionRepositorio { get; }
+
+        // Métodos para manejar transacciones
+        Task BeginTransactionAsync();
+        Task CommitTransactionAsync();
+        Task RollbackTransactionAsync();
 
         //creamos un metodo asincrono para guardar los cambios
         Task Guardar();

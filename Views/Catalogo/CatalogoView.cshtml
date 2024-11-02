@@ -1,25 +1,24 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "ElectroTech";
 }
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ElectroTech</title>
+    <title>ElectroTech - Catálogo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Agrega aquí tus estilos CSS -->
 </head>
 <body>
-
     <!-- Contenedor principal -->
     <div class="container-layout mt-4">
         <div class="catalogo-container mt-4 container container-sm container-md container-lg container-xl container-xxl">
             <div class="row">
                 <!-- Primera fila: Contenedor 1 y Contenedor 2 -->
                 <div class="col-md-2">
-                    <a href="catalogo.html" class="btn-atras">
-                        <i class="fas fa-chevron-left"></i> Atras
+                    <a asp-area="" asp-controller="Catalogo" asp-action="Catalogo" class="btn-atras">
+                        <i class="fas fa-chevron-left"></i> Atrás
                     </a>
                 </div>
 
@@ -50,16 +49,12 @@
 
                                     <div class="carrito-acciones">
                                         <button class="btn-vaciar-carrito">Vaciar Carrito</button>
-                                        <!-- <button class="btn-confirmar">Confirmar Compra</button> -->
                                     </div>
-
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
             </div>
 
             <div class="row mt-4">
@@ -79,7 +74,7 @@
                                 <li>$4,000.00 - $5,000.00</li>
                                 <li>$5,000.00 - $6,000.00</li>
                                 <li>$6,000.00 - $7,000.00</li>
-                                <li>$7,000.00 And Above</li>
+                                <li>$7,000.00 y más</li>
                             </ul>
                         </div>
 
@@ -108,20 +103,11 @@
                 <div class="col-md-10">
                     <!-- Contenedor 4: Productos -->
                     <div class="grid-productos">
-                        <div class="producto-tarjeta">
-                            <a href="#">
-                                <img src="/resources/laptop.png" alt="Producto">
-                            </a>
-                            <p class="producto-nombre">EX DISPLAY : MSI Pro 16</p>
-                            <p class="producto-precio">$499.00</p>
-                            <span class="prloducto-stock">In stock</span>
-                        </div>
-
-
+                        <!-- Los productos se renderizarán aquí dinámicamente -->
                     </div>
                 </div>
-
             </div>
+
             <!-- Contenedor 5: Paginación -->
             <div class="row mt-0 mb-4">
                 <div class="col-12 paginacion-container">
@@ -129,7 +115,7 @@
                 </div>
             </div>
 
-            <!-- -------------modal para ver detalles del producto------- -->
+            <!-- Modal para ver detalles del producto -->
             <div class="modal fade" id="detalleProductoModal" tabindex="-1" aria-labelledby="modalTitulo" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
@@ -150,9 +136,10 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
+
+    <!-- Script de la vista -->
+    @* <script src="~/js/catalogoView.js"></script> *@
 </body>
 </html>

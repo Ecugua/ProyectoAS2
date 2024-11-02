@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(data => {
             subcategorias = data.data.map(item => ({
                 id: item.id,
-                categoriaId: item.categoriaId,
+                categoriaId: item.categoria.nombre,
                 descripcion: item.nombre,
                 estado: item.estado ? "Activo" : "Inactivo",
                 creado: item.fechaCreacion.split('T')[0],
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 function Delete(url) {
     swal({
-        "title": "¿Esta seguro de eliminar la marca?",
+        "title": "¿Esta seguro de eliminar la subcategoria?",
         "text": "Este registro no se podra recuperar",
         "icon": "warning",
         "buttons": true,

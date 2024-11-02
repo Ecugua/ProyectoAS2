@@ -596,3 +596,4 @@ C:\Users\josep\Desktop\ProyectoASll\obj\Debug\net8.0\refint\ProyectoASll.dll
 C:\Users\josep\Desktop\ProyectoASll\obj\Debug\net8.0\ProyectoASll.pdb
 C:\Users\josep\Desktop\ProyectoASll\obj\Debug\net8.0\ProyectoASll.genruntimeconfig.cache
 C:\Users\josep\Desktop\ProyectoASll\obj\Debug\net8.0\ref\ProyectoASll.dll
+C:\Users\josep\Desktop\ProyectoASll\bin\Debug\net8.0\Twilio.dll

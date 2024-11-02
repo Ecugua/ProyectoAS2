@@ -404,7 +404,6 @@ namespace ProyectoASll.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("ImagenURL")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
@@ -491,7 +490,6 @@ namespace ProyectoASll.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("ImagenURL")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 

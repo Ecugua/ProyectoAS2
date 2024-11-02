@@ -149,6 +149,10 @@
       "PackagePath": "staticwebassets\\css\\cotizacion.css"
     },
     {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\custom.css",
+      "PackagePath": "staticwebassets\\css\\custom.css"
+    },
+    {
       "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\css\\home.css",
       "PackagePath": "staticwebassets\\css\\home.css"
     },
@@ -163,6 +167,18 @@
     {
       "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\69171e9c-d388-4b74-a199-b52b32b5e2ee.jpg",
+      "PackagePath": "staticwebassets\\img\\69171e9c-d388-4b74-a199-b52b32b5e2ee.jpg"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\6cff1536-f6b0-47a7-afa2-50fc85e283e5.jpg",
+      "PackagePath": "staticwebassets\\img\\6cff1536-f6b0-47a7-afa2-50fc85e283e5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\7cc34030-42d1-4f1d-ae8c-ab880ba81eeb.jpg",
+      "PackagePath": "staticwebassets\\img\\7cc34030-42d1-4f1d-ae8c-ab880ba81eeb.jpg"
     },
     {
       "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\Acer_Predator_Orion_3000.png",
@@ -485,6 +501,14 @@
       "PackagePath": "staticwebassets\\img\\arle.jpg"
     },
     {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\default.jpg",
+      "PackagePath": "staticwebassets\\img\\default.jpg"
+    },
+    {
+      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\dell.jpg",
+      "PackagePath": "staticwebassets\\img\\dell.jpg"
+    },
+    {
       "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\img\\ei.jpg",
       "PackagePath": "staticwebassets\\img\\ei.jpg"
     },
@@ -567,10 +591,6 @@
     {
       "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\clientes.js",
       "PackagePath": "staticwebassets\\js\\clientes.js"
-    },
-    {
-      "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\cotizacion copy.js",
-      "PackagePath": "staticwebassets\\js\\cotizacion copy.js"
     },
     {
       "Id": "C:\\Users\\josep\\Desktop\\ProyectoASll\\wwwroot\\js\\cotizacion.js",

@@ -31,7 +31,7 @@
                         <th>ID</th>
                         <th>Modelo</th>
                         <th>Número Serie</th>
-                        <th>Imagen URL</th>
+                        <th>Imagen</th>
                         <th>Precio</th>
                         <th>Stock</th>
                         <th>Subcategoría</th>
@@ -56,41 +56,48 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form id="formAgregarProducto" enctype="multipart/form-data">
-                        <input type="hidden" id="productoIdAgregar">
-                        <div class="mb-3">
-                            <label for="modeloAgregar" class="form-label">Modelo</label>
-                            <input type="text" class="form-control" id="modeloAgregar" required>
+                    <form id="formAgregarProducto" enctype="multipart/form-data" method="post" action="/Producto/Upsert">
+                        <input type="hidden" name="Mproducto.Id" id="productoIdAgregar">
+                        <div class="row">
+                            <div class="col col-6">
+                                <div class="mb-3">
+                                    <label for="modeloAgregar" class="form-label">Modelo</label>
+                                    <input type="text" class="form-control" name="Mproducto.Modelo" id="modeloAgregar" required>
+                                </div>
+                            </div>
+                            <div class="col col-6">
+                                <div class="mb-3">
+                                    <label for="numeroSerieAgregar" class="form-label">Número de Serie</label>
+                                    <input type="text" class="form-control" name="Mproducto.NumeroSerie" id="numeroSerieAgregar" required>
+                                </div>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="numeroSerieAgregar" class="form-label">Número de Serie</label>
-                            <input type="text" class="form-control" id="numeroSerieAgregar" required>
-                        </div>
+                        
                         <div class="mb-3">
                             <label for="imagenAgregar" class="form-label">Imagen del Producto</label>
-                            <input type="file" class="form-control" id="imagenAgregar" accept="image/*" required>
+                            <input type="file" class="form-control" name="ImagenArchivo" id="imagenAgregar" accept="image/*" required>
                         </div>
                         <div class="mb-3">
                             <label for="precioAgregar" class="form-label">Precio</label>
-                            <input type="number" class="form-control" id="precioAgregar" required>
+                            <input type="number" class="form-control" name="Mproducto.Precio" id="precioAgregar" required>
                         </div>
                         <div class="mb-3">
                             <label for="stockAgregar" class="form-label">Stock</label>
-                            <input type="number" class="form-control" id="stockAgregar" required>
+                            <input type="number" class="form-control" name="Mproducto.Stock" id="stockAgregar" required>
                         </div>
                         <div class="mb-3">
                             <label for="subcategoriaIdAgregar" class="form-label">Subcategoría</label>
-                            <select class="form-select" id="subcategoriaIdAgregar" required></select>
+                            <select class="form-select" name="Mproducto.SubCategoriaId" id="subcategoriaIdAgregar" required></select>
                         </div>
                         <div class="mb-3">
                             <label for="marcaIdAgregar" class="form-label">Marca</label>
-                            <select class="form-select" id="marcaIdAgregar" required></select>
+                            <select class="form-select" name="Mproducto.MarcaId" id="marcaIdAgregar" required></select>
                         </div>
                         <div class="mb-3">
                             <label for="disponibleAgregar" class="form-label">Disponible</label>
-                            <select class="form-select" id="disponibleAgregar" required>
-                                <option value="Sí">Sí</option>
-                                <option value="No">No</option>
+                            <select class="form-select" name="Mproducto.Disponible" id="disponibleAgregar" required>
+                                <option value="true">Sí</option>
+                                <option value="false">No</option>
                             </select>
                         </div>
                         <button type="submit" class="btn btn-success w-100">Guardar Producto</button>
@@ -109,41 +116,41 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form id="formEditarProducto" enctype="multipart/form-data">
-                        <input type="hidden" id="productoIdEditar">
+                    <form id="formEditarProducto" enctype="multipart/form-data" method="post" action="/Producto/Upsert">
+                        <input type="hidden" name="Mproducto.Id" id="productoIdEditar">
                         <div class="mb-3">
                             <label for="modeloEditar" class="form-label">Modelo</label>
-                            <input type="text" class="form-control" id="modeloEditar" required>
+                            <input type="text" class="form-control" name="Mproducto.Modelo" id="modeloEditar" required>
                         </div>
                         <div class="mb-3">
                             <label for="numeroSerieEditar" class="form-label">Número de Serie</label>
-                            <input type="text" class="form-control" id="numeroSerieEditar" required>
+                            <input type="text" class="form-control" name="Mproducto.NumeroSerie" id="numeroSerieEditar" required>
                         </div>
                         <div class="mb-3">
                             <label for="imagenEditar" class="form-label">Imagen del Producto</label>
-                            <input type="file" class="form-control" id="imagenEditar" accept="image/*">
+                            <input type="file" class="form-control" name="ImagenArchivo" id="imagenEditar" accept="image/*">
                         </div>
                         <div class="mb-3">
                             <label for="precioEditar" class="form-label">Precio</label>
-                            <input type="number" class="form-control" id="precioEditar" required>
+                            <input type="number" class="form-control" name="Mproducto.Precio" id="precioEditar" required>
                         </div>
                         <div class="mb-3">
                             <label for="stockEditar" class="form-label">Stock</label>
-                            <input type="number" class="form-control" id="stockEditar" required>
+                            <input type="number" class="form-control" name="Mproducto.Stock" id="stockEditar" required>
                         </div>
                         <div class="mb-3">
                             <label for="subcategoriaIdEditar" class="form-label">Subcategoría</label>
-                            <select class="form-select" id="subcategoriaIdEditar" required></select>
+                            <select class="form-select" name="Mproducto.SubCategoriaId" id="subcategoriaIdEditar" required></select>
                         </div>
                         <div class="mb-3">
                             <label for="marcaIdEditar" class="form-label">Marca</label>
-                            <select class="form-select" id="marcaIdEditar" required></select>
+                            <select class="form-select" name="Mproducto.MarcaId" id="marcaIdEditar" required></select>
                         </div>
                         <div class="mb-3">
                             <label for="disponibleEditar" class="form-label">Disponible</label>
-                            <select class="form-select" id="disponibleEditar" required>
-                                <option value="Sí">Sí</option>
-                                <option value="No">No</option>
+                            <select class="form-select" name="Mproducto.Disponible" id="disponibleEditar" required>
+                                <option value="true">Sí</option>
+                                <option value="false">No</option>
                             </select>
                         </div>
                         <button type="submit" class="btn btn-success w-100">Guardar Cambios</button>

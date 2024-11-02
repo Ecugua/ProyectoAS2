@@ -1,0 +1,85 @@
+/* Custom CSS for Login Page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.login-container {
+    max-width: 400px;
+    width: 100%;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+.registrer-container {
+    max-width: 715px;
+    width: 100%;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #27a844;
+    margin-bottom: 1rem;
+}
+
+.login-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.login-subtitle {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 1.5rem;
+}
+
+.form-floating .form-control {
+    border-radius: 4px;
+}
+
+.form-floating label {
+    font-size: 0.875rem;
+    color: #888;
+}
+
+.btn-primary {
+    background-color: #27a844;
+    border: none;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.btn-primary:hover {
+    background-color: #218a3b;
+}
+
+.forgot-password {
+    font-size: 0.875rem;
+    color: #f06d6d;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.form-check-label {
+    font-size: 0.875rem;
+    color: #333;
+}
+
+a {
+    color: #27a844;
+}
+
+a:hover {
+    text-decoration: underline;
+}

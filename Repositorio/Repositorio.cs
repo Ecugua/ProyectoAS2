@@ -2,6 +2,7 @@
 using ProyectoASll.Data;
 using ProyectoASll.Repositorio.IRepositorio;
 using System.Linq.Expressions;
+using ProyectoASll.Models;
 
 namespace ProyectoASll.Repositorio
 {
@@ -90,6 +91,58 @@ namespace ProyectoASll.Repositorio
             }
             return await query.ToListAsync();
         }
+
+        public async Task<IEnumerable<T>> ObtenerTodosId(
+            int id,
+            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
+            string incluirPropiedades = null,
+            bool isTracking = true)
+                {
+                    IQueryable<T> query = dbset;
+
+                    // Asumiendo que deseas filtrar por un campo Id
+                    query = query.Where(entity => EF.Property<int>(entity, "Id") == id);
+
+                    if (incluirPropiedades != null)
+                    {
+                        foreach (var incluirProp in incluirPropiedades.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                        {
+                            query = query.Include(incluirProp);
+                        }
+                    }
+
+                    if (orderBy != null)
+                    {
+                        query = orderBy(query);
+                    }
+
+                    if (!isTracking)
+                    {
+                        query = query.AsNoTracking();
+                    }
+
+                    return await query.ToListAsync();
+        }
+
+
+        public async Task<IEnumerable<MProducto>> ObtenerProductosPorCategoria(int categoriaId)
+        {
+            // Realiza la consulta utilizando LINQ
+            var productos = await _context.Productos
+                .Include(p => p.SubCategoria) // Incluye SubCategoria
+                .ThenInclude(s => s.Categoria) // Incluye Categoria desde SubCategoria
+                .Where(p => p.SubCategoria.CategoriaId == categoriaId) // Filtra por CategoriaId
+                .ToListAsync(); // Convierte el resultado a una lista
+
+            return productos;
+        }
+
+        /*
+        public async Task<IEnumerable<T>> ObtenerPorCategoria(int categoriaId)
+        {
+            return await ObtenerCategoria(p => p.ProductoVM == categoriaId);
+        }
+        */
         /*
         public async Task<T> ObtenerImagenUrlEmpleado(string userId)
         {
@@ -118,6 +171,9 @@ namespace ProyectoASll.Repositorio
 
         }
 
-        
+        Task<IEnumerable<T>> IRepositorio<T>.ObtenerProductosPorCategoria(int categoriaId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -77,7 +77,8 @@ namespace ProyectoASll.Controllers
         [HttpGet]
         public async Task<IActionResult> obtenerTodos()
         {
-            var todos = await _unidadTrabajo.SubCategoriaRepositorio.ObtenerTodos();
+            var todos = await _unidadTrabajo.SubCategoriaRepositorio.ObtenerTodos(incluirpropiedades: "Categoria");
+
             return Json(new { data = todos });
         }
 
