@@ -4,20 +4,6 @@ services:
       context: .
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ConnectionStrings__DefaultConnection=Server=sqlserver;Database=ProyectoASll;User=sa;Password=yourStrong#Password;Encrypt=false;
+      - ConnectionStrings__DefaultConnection=Server=tcp:electrodb.database.windows.net,1433;Database=ProyectoASll;User ID=adminsql;Password=Genshinimpact18;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
     ports:
       - "8001:8080"
-    depends_on:
-      - sqlserver  # Asegúrate de que la app depende de sqlserver
-
-  sqlserver:
-    image: mcr.microsoft.com/mssql/server:2022-latest
-    environment:
-      - ACCEPT_EULA=Y
-      - MSSQL_SA_PASSWORD=yourStrong#Password
-    ports:
-      - "1433:1433"
-    volumes:
-      - sql_data:/var/opt/mssql
-volumes:
-  sql_data:
